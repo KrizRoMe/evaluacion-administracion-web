@@ -1,0 +1,196 @@
+/* ==================== RESET / BASE ==================== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --color-verde: #2f8a4f;
+  --color-verde-claro: #6cbf84;
+  --color-tierra: #6b4f2a;
+  --color-texto: #2a2a2a;
+  --color-gris: #f4f4f4;
+  --color-blanco: #ffffff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background: var(--color-blanco);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ==================== HEADER ==================== */
+.site-header {
+  background: var(--color-verde);
+  color: var(--color-blanco);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+.main-nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+  background: var(--color-gris);
+  padding: 3rem 0;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: var(--color-verde);
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* ==================== BOTONES ==================== */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--color-verde);
+  color: var(--color-blanco);
+}
+
+.btn-secondary {
+  background: var(--color-verde-claro);
+  color: var(--color-blanco);
+  width: 100%;
+}
+
+.btn-primary:hover { background: var(--color-tierra); }
+.btn-secondary:hover { background: var(--color-verde); }
+
+/* ==================== PRODUCTOS ==================== */
+.productos {
+  padding: 3rem 0;
+}
+
+.productos h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-verde);
+}
+
+.section-subtitle {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-producto {
+  background: var(--color-blanco);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card-producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-producto img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.card-producto h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-tierra);
+  margin-bottom: 1rem;
+}
+
+/* ==================== CONTACTO ==================== */
+.contacto {
+  background: var(--color-gris);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.contacto h2 {
+  color: var(--color-verde);
+  margin-bottom: 1rem;
+}
+
+/* ==================== FOOTER ==================== */
+.site-footer {
+  background: var(--color-texto);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 700px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-text h1 { font-size: 1.8rem; }
+  .main-nav a { margin-left: 1rem; font-size: 0.9rem; }
+}
