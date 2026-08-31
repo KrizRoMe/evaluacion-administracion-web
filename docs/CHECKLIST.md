@@ -25,29 +25,27 @@ Usa esta lista para verificar tu avance.
 - [ ] Revisé la pestaña **Elements**.
 - [ ] Revisé la pestaña **Network**.
 - [ ] Ejecuté **Lighthouse** (Performance).
+- [ ] (Opcional) Escaneé con **axe DevTools** para accesibilidad.
 - [ ] Encontré **3 problemas reales**.
 - [ ] Anoté dónde encontré cada problema.
 
 ## Issues — 20 min
 
-- [ ] Creé **EXACTAMENTE 3 Issues**.
+- [ ] Creé **EXACTAMENTE 3 Issues** usando los templates de `.github/ISSUE_TEMPLATE/`.
 - [ ] Cada Issue tiene:
-  - [ ] Título descriptivo
   - [ ] Problema
+  - [ ] Ubicación y reproducción
   - [ ] Evidencia
+  - [ ] Concepto del curso relacionado
   - [ ] Impacto
-  - [ ] Solución propuesta
-  - [ ] Tipo de mantenimiento
-  - [ ] Pilar (VIVO / RÁPIDO / SEGURO)
+  - [ ] Severidad (Baja/Media/Alta) + justificación
+  - [ ] Solución propuesta (en texto, NO aplicada)
 - [ ] Cada Issue cubre un área diferente (idealmente).
 
-## Corrección — 15 min
+## Soluciones propuestas — 10 min
 
-- [ ] Corregí **al menos 1 problema**.
-- [ ] Hice commit del cambio.
-- [ ] Hice push.
-- [ ] Verifiqué que GitHub Pages sigue funcionando.
-- [ ] Actualicé la Issue correspondiente (cerré o comenté).
+- [ ] Cada Issue tiene una solución propuesta **descrita en texto**.
+- [ ] NO es necesario aplicar las correcciones en el código.
 
 ## README — 15 min
 
@@ -63,14 +61,15 @@ Usa esta lista para verificar tu avance.
 - [ ] Propuse SLO.
 - [ ] Expliqué SLA.
 - [ ] Escribí Runbook de 4–6 pasos.
-- [ ] Indiqué qué Issue corregí.
+- [ ] Resumí las soluciones propuestas en el README.
 
 ## Verificación final — 5 min
 
 - [ ] El repo es público.
 - [ ] Pages funciona.
 - [ ] Tengo exactamente 3 Issues.
-- [ ] Hay al menos 1 corrección en commits.
+- [ ] Cada Issue usa un template.
+- [ ] Cada Issue tiene todas las secciones completas.
 - [ ] El README está completo.
 - [ ] Las URLs están en el README.
 
