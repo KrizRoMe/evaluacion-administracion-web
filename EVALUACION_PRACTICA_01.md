@@ -10,10 +10,10 @@
 |---------|-----|
 | 📦 **Repositorio base** | https://github.com/KrizRoMe/evaluacion-administracion-web |
 | 🌐 **Sitio público (auditable)** | https://krizrome.github.io/evaluacion-administracion-web/ |
+| 📋 **Issues del docente** | https://github.com/KrizRoMe/evaluacion-administracion-web/issues |
+| 📤 **LINK DE ENTREGA (crear Issue con tus URLs)** | https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=entrega.yml |
 | 📝 **Tu repo (estudiante)** | `https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE` |
 | 🚀 **Tu GitHub Pages** | `https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/` |
-
-**Al final de la evaluación entrega al docente:** URL de tu repo + URL de tu GitHub Pages.
 
 ---
 
@@ -64,7 +64,10 @@ https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE
 🚀 **Tu sitio publicado (GitHub Pages):**
 https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 
-📌 **Al final de la evaluación entrega al docente:** URL de tu repo + URL de tu GitHub Pages.
+📤 **Dónde entregas tu evaluación (Issue de entrega):**
+https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=entrega.yml
+
+📌 Los 3 hallazgos se documentan como Issues EN TU REPO. La entrega final se hace como Issue AQUÍ.
 
 ---
 
@@ -79,18 +82,16 @@ Publicar con GitHub Pages
    ↓
 Auditar con DevTools / Lighthouse / axe DevTools
    ↓
-Crear 3 Issues
+Crear 3 Issues en TU repo
    ↓
-Especificar la solución propuesta en cada Issue
+Documentar solución propuesta en cada Issue
    ↓
 Completar README
    ↓
-Entregar
+Crear Issue de ENTREGA en repo del docente
 ```
 
 **Tiempo total:** 90 minutos.
-
-> ⚠️ **Nota importante:** No es necesario aplicar las correcciones en el código. Basta con **especificar la solución propuesta en el texto de cada GitHub Issue**. La evaluación se basa en la calidad del análisis escrito, no en los commits de corrección.
 
 ---
 
@@ -127,13 +128,7 @@ git push -u origin main
 4. Guardar
 5. Esperar 1–2 minutos
 
-**Checklist:**
-- ☐ Repo público
-- ☐ Página publicada
-- ☐ URL funcionando
-- ☐ URL copiada al README
-
-**Tu URL pública (formato):**
+**Tu URL pública:**
 ```
 https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 ```
@@ -144,122 +139,104 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 
 **Herramientas a usar:**
 
-- **Chrome DevTools** (F12)
-  - Pestaña **Elements** → revisa el HTML
-  - Pestaña **Network** → observa los recursos
-- **Lighthouse** (en DevTools)
-  - Pestaña **Lighthouse** → Performance → Analyze
-- **axe DevTools** (extensión del navegador)
-  - Pestaña **axe DevTools** → Scan ALL of my page
-  - Detecta problemas de **accesibilidad** (imágenes sin `alt`, contraste, roles ARIA, etc.)
+- **Chrome DevTools** (F12) — Elements + Network
+- **Lighthouse** — Performance → Analyze
+- **axe DevTools** (extensión) — Scan ALL of my page
 
-**Objetivo:** encontrar **3 problemas reales**.
-
-**Tipos de problemas que pueden existir:**
-- Rendimiento (imágenes, scripts, métricas)
-- Accesibilidad (imágenes sin `alt`, contraste, semántica)
-- Mantenimiento (dependencias)
-- Seguridad básica (versiones, actualizaciones)
-- Administración (documentación, procedimientos)
+**Objetivo:** encontrar **3 problemas reales** en el sitio.
 
 ---
 
-## 📌 Slide 8 — Parte 4: GitHub Issues (20 min)
+## 📌 Slide 8 — Parte 4: Crear 3 Issues en TU repo (20 min)
 
-**Crear EXACTAMENTE 3 Issues** usando los **templates de Issues** que están en la carpeta `.github/ISSUE_TEMPLATE/` del repositorio.
+⚠️ Estos 3 Issues se crean en **TU PROPIO repositorio**, NO en el del docente.
 
-**Cada Issue tiene 4 templates disponibles según el área del hallazgo:**
+**Templates interactivos** disponibles en `.github/ISSUE_TEMPLATE/` de tu repo:
 
-- `rendimiento.md` — para hallazgos de performance / Lighthouse
-- `mantenimiento.md` — para hallazgos de dependencias / seguridad
-- `accesibilidad.md` — para hallazgos de axe DevTools
-- `general.md` — para cualquier otro hallazgo
+- 📊 `rendimiento.yml` → performance / Lighthouse
+- 🔧 `mantenimiento.yml` → dependencias / seguridad
+- ♿ `accesibilidad.yml` → axe DevTools
+- 📝 `general.yml` → cualquier otro hallazgo
 
-**Estructura de cada template:**
+**Cada template es un FORMULARIO INTERACTIVO con:**
 
-```markdown
-### Problema
-¿Qué encontraste?
-
-### Ubicación y reproducción
-¿Dónde se encuentra? ¿Cómo reproducirlo o comprobarlo?
-
-### Evidencia
-Capturas, métricas, Lighthouse, DevTools Network, axe DevTools, código, etc.
-
-### Concepto del curso relacionado
-¿Qué concepto de Administración de Sitios Web se relaciona?
-(VIVO/RÁPIDO/SEGURO, mantenimiento, LCP/INP/CLS/TTFB, etc.)
-
-### Impacto
-¿Por qué podría ser un problema? ¿A quién afecta?
-
-### Severidad
-- [ ] Baja
-- [ ] Media
-- [ ] Alta
-Justificación breve:
-
-### Solución propuesta (NO es necesario aplicarla en código)
-¿Qué debería hacerse? Describe la corrección en texto.
-```
+- 📝 Inputs (texto corto con placeholder)
+- 📄 Textareas (texto largo)
+- 🔽 Dropdowns (Pilar, Mantenimiento, etc)
+- ☑️ Checkboxes (Principios WCAG, Conceptos múltiples)
+- ⚠️ Validación required (no se envía si está vacío)
 
 ---
 
-## 📌 Slide 9 — Parte 5: Documentar la solución (10 min)
+## 📌 Slide 9 — Parte 5: Documentar solución + README (25 min)
 
-**No es necesario aplicar las correcciones en el código.**
+**No es necesario aplicar las correcciones en el código.** Solo ANALIZAR y PROPONER en texto.
 
-En cada Issue, completa la sección **"Solución propuesta"** describiendo en texto qué debería hacerse para resolver el problema encontrado.
-
-**Ejemplos de soluciones en texto (no aplicar):**
+**En cada Issue, completa la sección Solución propuesta** (ejemplos):
 
 - "Agregar atributos `width` y `height` a la etiqueta `<img>` del hero."
-- "Añadir el atributo `defer` al `<script>` para que no sea bloqueante."
-- "Actualizar `jquery` a una versión 3.x sin vulnerabilidades conocidas."
-- "Cambiar el texto del footer por la fecha actual de mantenimiento."
-- "Agregar atributo `alt` descriptivo a todas las imágenes del sitio."
+- "Añadir el atributo `defer` al `<script>`."
+- "Actualizar `jquery` a una versión 3.x."
+- "Agregar atributo `alt` descriptivo a todas las imágenes."
 
-> 💡 Lo que se evalúa es tu capacidad de **analizar y proponer**, no de **codificar la corrección**.
+**README debe incluir:**
 
----
-
-## 📌 Slide 10 — Parte 6: README administrativo (15 min)
-
-**Completar el README con:**
-
-- **VIVO** — ¿qué significa? ¿qué métrica?
-- **RÁPIDO** — ¿qué significa? Menciona LCP, INP, CLS o TTFB
-- **SEGURO** — menciona 2 acciones
-- **Backup 3-2-1** — explica brevemente
-- **SLI** — propone un indicador
-- **SLO** — propone un objetivo
-- **SLA** — explica qué es
-- **Runbook** — 4 a 6 pasos para "sitio caído"
+VIVO • RÁPIDO (con LCP/INP/CLS/TTFB) • SEGURO (2 acciones) • Backup 3-2-1 • SLI • SLO • SLA • Runbook (4–6 pasos) • Datos del estudiante + URLs
 
 ---
 
-## 📌 Slide 11 — Checklist final + ENTREGA
+## 📌 Slide 10 — Parte 6: Crear Issue de ENTREGA (5 min)
 
-**Antes de entregar, verifica:**
+**Esta Issue se crea en el repo del DOCENTE.**
 
-- ☐ Repositorio público
+**Pasos:**
+
+1. Abre el repo del curso en una pestaña nueva
+2. Clic en **Issues → New issue**
+3. Selecciona el template **📤 Entrega de evaluación**
+4. Completa el formulario (nombre, código, URLs)
+5. Clic en **Submit**
+
+**🔗 LINK DIRECTO:**
+```
+https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=entrega.yml
+```
+
+**La Issue de entrega te pide:**
+
+- Nombre completo
+- Código
+- URL de TU repositorio
+- URL de TU GitHub Pages
+- Checklist de auto-verificación
+
+---
+
+## 📌 Slide 11 — Checklist final completo
+
+**📦 En TU repositorio:**
+
+- ☐ Repo público
 - ☐ GitHub Pages funciona
-- ☐ Tengo exactamente **3 Issues** (usando los templates)
-- ☐ Cada Issue tiene todas las secciones completas (Problema, Ubicación, Evidencia, Concepto, Impacto, Severidad, Solución propuesta)
+- ☐ EXACTAMENTE 3 Issues creadas
+- ☐ Cada Issue usa un template .yml
+- ☐ Cada Issue completa todas las secciones
 - ☐ README completo
-- ☐ URLs en el README
+- ☐ URLs y datos del estudiante
 
-**📤 ENTREGAR AL DOCENTE:**
+**📤 En repo del DOCENTE (entrega):**
 
-- 📦 URL de TU repositorio:
-  ```
-  https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE
-  ```
-- 🌐 URL de TU GitHub Pages:
-  ```
-  https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
-  ```
+- ☐ Abrí el link de entrega
+- ☐ Seleccioné el template 'Entrega'
+- ☐ Completé nombre, código
+- ☐ Pegué URL de mi repo
+- ☐ Pegué URL de mi GitHub Pages
+- ☐ Marqué el checklist
+- ☐ Envié la Issue
+
+🔗 **ENTREGAR AL DOCENTE:** https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=entrega.yml
+
+📌 Los 3 hallazgos van en TU repo. La ENTREGA final va AQUÍ.
 
 ---
 
@@ -270,14 +247,6 @@ En cada Issue, completa la sección **"Solución propuesta"** describiendo en te
 - Lee los mensajes de error completos.
 - `git status` te muestra el estado.
 - `docs.github.com` está en español.
-- Pide ayuda al docente solo si es un problema técnico de Git/GitHub CLI.
-
-### Recordatorios importantes
-
-- **No** necesitas encontrar **todos** los problemas del sitio.
-- **No** necesitas programar funcionalidades nuevas.
-- **No** necesitas modificar el diseño visual.
-- **Sí** necesitas documentar tu trabajo con Issues.
 
 ### Tiempos por fase
 
@@ -286,9 +255,9 @@ En cada Issue, completa la sección **"Solución propuesta"** describiendo en te
 | Repositorio | 10 min |
 | GitHub Pages | 10 min |
 | Auditoría | 15 min |
-| Issues | 20 min |
-| Documentar soluciones | 10 min |
-| README | 15 min |
+| Issues (TU repo) | 20 min |
+| Documentar soluciones + README | 25 min |
+| Issue de ENTREGA | 5 min |
 | Verificación | 5 min |
 | **Total** | **90 min** |
 
