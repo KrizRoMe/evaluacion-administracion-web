@@ -167,7 +167,7 @@ VIVO · RÁPIDO (con LCP/INP/CLS/TTFB) · SEGURO (2 acciones) · Backup 3-2-1 ·
 1. Abre el repo del curso en una pestaña nueva
 2. Clic en **Issues → New issue**
 3. Selecciona el template **🔗 Link de evaluación**
-4. Completa: nombre, código, link de tu repo, link público de tu sitio
+4. Completa: nombre, link de tu repo, link público de tu sitio
 5. Clic en **Submit**
 
 **🔗 LINK DIRECTO:**
@@ -178,7 +178,6 @@ https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=li
 **La Issue te pide SOLO:**
 
 - Nombre completo
-- Código
 - Link de tu repositorio
 - Link público de tu sitio
 
@@ -200,7 +199,7 @@ https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=li
 
 - ☐ Abrí el link del template
 - ☐ Seleccioné 'Link de evaluación'
-- ☐ Completé nombre, código
+- ☐ Puse mi nombre
 - ☐ Pegué link de mi repo
 - ☐ Pegué link público de mi sitio
 - ☐ Envié la Issue
