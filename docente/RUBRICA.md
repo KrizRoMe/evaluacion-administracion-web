@@ -2,130 +2,276 @@
 
 > **Escala:** 1–20. Aprobado: 14.
 > **Modalidad:** individual.
-> **Aplicar después** de revisar el repositorio y GitHub Pages del estudiante.
+> **Base de la calificación:** contenido de las 3 GitHub Issues creadas por el estudiante.
 
 ---
 
-## Tabla resumen
+## 🎯 Principio fundamental de calificación
 
-| # | Criterio | Puntos |
-|---|----------|-------:|
-| 1 | Git + GitHub + repositorio | 3 |
-| 2 | GitHub Pages publicado y funcional | 3 |
-| 3 | Auditoría con DevTools / Lighthouse | 3 |
-| 4 | Tres GitHub Issues completas | 4 |
-| 5 | Corrección de al menos un problema | 2 |
-| 6 | VIVO / RÁPIDO / SEGURO | 2 |
-| 7 | 3-2-1 + SLI/SLO/SLA + Runbook | 2 |
-| 8 | README + organización + evidencias | 1 |
-|   | **TOTAL** | **20** |
+**La evaluación se califica principalmente a partir del CONTENIDO DE LAS 3 GITHUB ISSUES.**
+
+El estudiante debe crear **exactamente 3 Issues**, cada una representando un hallazgo diferente. La calidad del contenido escrito en las Issues es la principal evidencia para asignar la nota.
 
 ---
 
-## Detalle por criterio
+## 📊 Distribución de puntaje
 
-### 1. Git + GitHub + repositorio — 3 puntos
-
-| Nivel | Descripción | Puntos |
-|-------|-------------|-------:|
-| Excelente | Repositorio público, commits claros, flujo de trabajo limpio. | 3 |
-| Bueno | Repositorio público con commits, aunque poco organizados. | 2 |
-| Básico | Repositorio creado y código subido, aunque con desorden menor. | 1 |
-| Deficiente | No logró crear el repositorio o subió archivos de forma incorrecta. | 0 |
-
-**Criterio de aprobación:** repositorio público con el código del sitio.
+| Criterio | Puntaje |
+|----------|--------:|
+| Issue 1 — Calidad del hallazgo | 6 pts |
+| Issue 2 — Calidad del hallazgo | 6 pts |
+| Issue 3 — Calidad del hallazgo | 6 pts |
+| Calidad global de los 3 hallazgos | 2 pts |
+| **TOTAL** | **20 pts** |
 
 ---
 
-### 2. GitHub Pages publicado y funcional — 3 puntos
+## 📋 Criterios por Issue (×3) — 6 puntos cada una
 
-| Nivel | Descripción | Puntos |
-|-------|-------------|-------:|
-| Excelente | Pages activo, URL accesible, sitio carga completamente. | 3 |
-| Bueno | Pages activo, URL accesible, algún detalle visual menor. | 2 |
-| Básico | Pages activo pero con demoras o aspecto incompleto. | 1 |
-| Deficiente | No activó Pages o la URL no funciona. | 0 |
-
-**Criterio de aprobación:** la URL pública carga y muestra el sitio.
+Cada una de las 3 Issues se evalúa de manera **independiente** con los mismos 6 criterios.
 
 ---
 
-### 3. Auditoría con DevTools / Lighthouse — 3 puntos
+### 1. Identificación del problema — 1 punto
 
-| Nivel | Descripción | Puntos |
-|-------|-------------|-------:|
-| Excelente | Usó DevTools (Elements/Network) y Lighthouse; identifica áreas reales. | 3 |
-| Bueno | Usó al menos una herramienta; identifica problemas válidos. | 2 |
-| Básico | Identificó problemas reales aunque sin herramientas visibles. | 1 |
-| Deficiente | No logró identificar problemas o son incorrectos. | 0 |
+Evalúa si el estudiante identifica correctamente un problema **REAL** de la página.
 
-**Criterio de aprobación:** encontró al menos 1 problema real.
-
----
-
-### 4. Tres GitHub Issues completas — 4 puntos
-
-| Nivel | Descripción | Puntos |
-|-------|-------------|-------:|
-| Excelente | 3 Issues completas, variadas, con buena evidencia y clasificación. | 4 |
-| Bueno | 3 Issues presentes, completas, aunque con clasificación discutible. | 3 |
-| Básico | 3 Issues presentes pero algunas incompletas. | 2 |
-| Deficiente | Menos de 3 Issues o todas muy incompletas. | 0–1 |
-
-**Distribución interna sugerida (1.33 pts por Issue promedio):**
-- Cada Issue con título, problema, evidencia, impacto, solución, mantenimiento y pilar → ~1.3 pts.
-- Si una Issue está incompleta → ~0.6 pts.
-
-**Criterio de aprobación:** exactamente 3 Issues creadas, todas con secciones completas.
+| Puntaje | Descripción |
+|--------:|-------------|
+| 1.0 pt | El problema existe. Está claramente descrito. Es específico. |
+| 0.5 pt | El problema existe, pero está descrito de manera poco precisa. |
+| 0 pt | El problema no existe o la descripción no permite comprenderlo. |
 
 ---
 
-### 5. Corrección de al menos un problema — 2 puntos
+### 2. Ubicación y reproducción — 1 punto
 
-| Nivel | Descripción | Puntos |
-|-------|-------------|-------:|
-| Excelente | Corrigió 1+ problema, hizo commit, push, verificó Pages, cerró Issue. | 2 |
-| Bueno | Corrigió 1 problema e hizo commit/push. | 1 |
-| Deficiente | No corrigió ningún problema o no hizo commit/push. | 0 |
+Evalúa si el estudiante explica **dónde** se encuentra el problema y **cómo comprobarlo**.
 
-**Criterio de aprobación:** hay al menos 1 commit de corrección en el repositorio.
-
----
-
-### 6. VIVO / RÁPIDO / SEGURO — 2 puntos
-
-| Nivel | Descripción | Puntos |
-|-------|-------------|-------:|
-| Excelente | Explica los 3 conceptos con ejemplos y métricas concretas. | 2 |
-| Bueno | Explica los 3 conceptos aunque con menos detalle. | 1.5 |
-| Básico | Explica 2 de los 3 correctamente. | 1 |
-| Deficiente | Explica solo 1 o ninguno. | 0 |
-
-**Criterio de aprobación:** los 3 conceptos están explicados con sus propias palabras.
+| Puntaje | Descripción |
+|--------:|-------------|
+| 1.0 pt | Indica claramente dónde ocurre. Proporciona pasos suficientes para reproducirlo o comprobarlo. |
+| 0.5 pt | Se puede entender aproximadamente dónde ocurre, pero faltan detalles. |
+| 0 pt | No permite localizar ni comprobar el problema. |
 
 ---
 
-### 7. Backup 3-2-1 + SLI/SLO/SLA + Runbook — 2 puntos
+### 3. Relación con conceptos vistos en clase — 1.5 puntos
 
-| Nivel | Descripción | Puntos |
-|-------|-------------|-------:|
-| Excelente | Explica 3-2-1, propone SLI/SLO/SLA coherentes, runbook de 4–6 pasos. | 2 |
-| Bueno | Explica la mayoría con buena calidad. | 1.5 |
-| Básico | Cubre la mayoría de los puntos. | 1 |
-| Deficiente | Faltan varios elementos. | 0 |
+Evalúa si el estudiante relaciona correctamente el problema con los contenidos de Administración de Sitios Web.
 
-**Criterio de aprobación:** los 5 elementos (3-2-1, SLI, SLO, SLA, Runbook) están presentes.
+**Conceptos aceptables (lista no exhaustiva):**
+
+- VIVO / RÁPIDO / SEGURO
+- uptime, monitoreo, monitoreo activo/pasivo
+- rendimiento, caching
+- seguridad, parches, backups, autenticación
+- mantenimiento preventivo / correctivo / adaptativo / perfectivo
+- npm, package.json, dependencias, versionado semántico
+- backup 3-2-1
+- SLI, SLO, SLA
+- runbooks
+- Lighthouse, LCP, INP, CLS, TTFB
+- Chrome DevTools, Network
+- Git, GitHub, GitHub Pages
+
+| Puntaje | Descripción |
+|--------:|-------------|
+| 1.5 pts | Relaciona correctamente el problema con un concepto visto. Explica por qué existe esa relación. |
+| 1.0 pt | El concepto es correcto, pero la explicación es superficial. |
+| 0.5 pt | Existe una relación parcialmente correcta. |
+| 0 pt | No existe una relación válida con los contenidos del curso. |
+
+**IMPORTANTE — NO exigir:**
+
+- ❌ Terminología perfecta
+- ❌ Nombres exactos
+- ❌ Fórmulas
+- ❌ Conocimientos adicionales
+- ❌ Explicaciones académicas complejas
+
+**Evaluar la comprensión, no la redacción.**
 
 ---
 
-### 8. README + organización + evidencias — 1 punto
+### 4. Impacto — 1 punto
 
-| Nivel | Descripción | Puntos |
-|-------|-------------|-------:|
-| Aprobado | README completo, URLs correctas, datos del estudiante. | 1 |
-| Deficiente | README incompleto o sin datos clave. | 0 |
+Evalúa si explica las consecuencias del problema.
 
-**Criterio de aprobación:** README completo y todas las URLs presentes.
+| Puntaje | Descripción |
+|--------:|-------------|
+| 1.0 pt | Explica claramente cómo afecta al usuario, sitio, rendimiento, seguridad, disponibilidad u operación. |
+| 0.5 pt | Menciona un impacto razonable, pero sin explicarlo suficientemente. |
+| 0 pt | No explica el impacto. |
+
+---
+
+### 5. Severidad — 0.5 puntos
+
+El estudiante debe seleccionar:
+
+- **Baja**
+- **Media**
+- **Alta**
+
+y justificar brevemente.
+
+| Puntaje | Descripción |
+|--------:|-------------|
+| 0.5 pt | La severidad es razonable y está justificada. |
+| 0.25 pt | La severidad es razonable, pero la justificación es débil. |
+| 0 pt | La severidad es incoherente con el problema. |
+
+---
+
+### 6. Solución propuesta — 1 punto
+
+Evalúa si propone una solución razonable.
+
+| Puntaje | Descripción |
+|--------:|-------------|
+| 1.0 pt | La solución es concreta. Es técnicamente razonable. Resuelve el problema identificado. |
+| 0.5 pt | La solución es general, pero razonable. |
+| 0 pt | No propone solución o la solución no tiene relación con el problema. |
+
+---
+
+## 🌐 Criterios globales — 2 puntos (las 3 Issues en conjunto)
+
+---
+
+### 7. Cobertura de los contenidos — 1 punto
+
+Evalúa si las 3 Issues demuestran aplicación de **diferentes conceptos** trabajados durante la Unidad 1.
+
+| Puntaje | Descripción |
+|--------:|-------------|
+| 1.0 pt | Los tres hallazgos permiten evidenciar una buena aplicación de los contenidos del curso. |
+| 0.5 pt | Existe cierta variedad, aunque los hallazgos se concentran en pocos conceptos. |
+| 0 pt | Los hallazgos tienen poca relación con los contenidos de la unidad. |
+
+**IMPORTANTE:**
+
+- ✅ La **variedad** es un criterio **POSITIVO**, no una condición obligatoria.
+- ❌ **No penalizar** fuertemente al estudiante porque sus tres hallazgos pertenezcan a una misma categoría si están correctamente analizados.
+
+---
+
+### 8. Calidad global del análisis — 1 punto
+
+| Puntaje | Descripción |
+|--------:|-------------|
+| 1.0 pt | Los tres hallazgos son claros, relevantes y están bien argumentados. Existe coherencia entre problema, impacto y solución. |
+| 0.5 pt | Los hallazgos son válidos, pero presentan algunas inconsistencias o explicaciones superficiales. |
+| 0 pt | Los hallazgos presentan problemas importantes de coherencia o comprensión. |
+
+---
+
+## ✅ Condición de aprobación
+
+La nota mínima aprobatoria es: **14/20**.
+
+**La evaluación debe ser PERMISIVA.**
+
+Un estudiante que:
+
+- identifica 3 problemas reales,
+- los ubica correctamente,
+- los relaciona razonablemente con contenidos vistos,
+- explica su impacto,
+- asigna una severidad razonable,
+- propone soluciones coherentes,
+
+**debe poder obtener aproximadamente 14–16/20.**
+
+**No buscar que solamente los estudiantes con respuestas perfectas aprueben.**
+
+---
+
+## 🤖 Criterio fundamental para la corrección (manual o con IA)
+
+La corrección debe evaluar principalmente:
+
+> **¿El estudiante entendió el problema y puede explicar por qué es importante y cómo solucionarlo?**
+
+**NO debe evaluar principalmente:**
+
+- ❌ Ortografía
+- ❌ Redacción perfecta
+- ❌ Longitud de la respuesta
+- ❌ Uso de palabras técnicas
+- ❌ Cantidad de texto
+- ❌ Coincidencia literal con las respuestas esperadas
+
+**Debe evaluar el SIGNIFICADO de la respuesta.**
+
+---
+
+## 📐 Reglas para la corrección
+
+1. ✅ Verificar que el problema exista realmente.
+2. ✅ Comparar semánticamente el hallazgo con las respuestas esperadas.
+3. ✅ Aceptar respuestas redactadas de manera diferente.
+4. ✅ Aceptar diferentes conceptos cuando la relación sea razonable.
+5. ✅ Aceptar diferentes clasificaciones de mantenimiento si están argumentadas.
+6. ❌ No exigir una respuesta textual idéntica.
+7. ❌ No inventar problemas que no existen.
+8. ❌ No penalizar errores menores de redacción.
+9. ❌ No exigir conocimientos que no fueron enseñados.
+10. ✅ Mantener consistencia matemática en la nota.
+11. ✅ La nota final debe estar entre 1 y 20.
+
+---
+
+## 📚 Ejemplo de evaluación
+
+### Issue 1
+
+| Criterio | Puntaje |
+|----------|--------:|
+| Problema | 1/1 |
+| Reproducción | 1/1 |
+| Concepto | 1.5/1.5 |
+| Impacto | 1/1 |
+| Severidad | 0.5/0.5 |
+| Solución | 1/1 |
+| **Subtotal** | **6/6** |
+
+### Issue 2
+
+| Criterio | Puntaje |
+|----------|--------:|
+| Problema | 1/1 |
+| Reproducción | 0.5/1 |
+| Concepto | 1/1.5 |
+| Impacto | 1/1 |
+| Severidad | 0.5/0.5 |
+| Solución | 1/1 |
+| **Subtotal** | **5/6** |
+
+### Issue 3
+
+| Criterio | Puntaje |
+|----------|--------:|
+| Problema | 1/1 |
+| Reproducción | 0.5/1 |
+| Concepto | 1/1.5 |
+| Impacto | 0.5/1 |
+| Severidad | 0.5/0.5 |
+| Solución | 1/1 |
+| **Subtotal** | **4.5/6** |
+
+### Global
+
+| Criterio | Puntaje |
+|----------|--------:|
+| Cobertura | 1/1 |
+| Calidad global | 0.5/1 |
+| **Subtotal** | **1.5/2** |
+
+### Nota final
+
+`6 + 5 + 4.5 + 1.5 = 17/20` → **APROBADO**
 
 ---
 
@@ -144,36 +290,21 @@
 
 ---
 
-## ⚖️ Criterio general para el docente
+## 🏆 Regla final
 
-1. **En caso de duda, aceptar.** Esta es una evaluación permisiva.
-2. **Valorar la explicación, no la etiqueta exacta.** Si el estudiante clasifica un problema como "Perfectivo" y la respuesta esperada es "Correctivo", pero su justificación es razonable → aceptar.
-3. **No exigir Lighthouse perfecto.** Las puntuaciones dependen del equipo del estudiante.
-4. **Aceptar comandos equivalentes.** Si logró subir el código con otra secuencia válida, está bien.
-5. **No exigir capturas de pantalla.** Si las Issues tienen texto descriptivo suficiente, está bien.
+La evaluación debe premiar:
 
----
+> **CALIDAD DEL ANÁLISIS > CANTIDAD DE PROBLEMAS**
 
-## 📊 Distribución esperada
+El estudiante solo necesita:
 
-Para que un estudiante "típico" alcance 14/20, debe completar correctamente las fases esenciales (1–7) con nivel "Básico" o "Bueno". El criterio 8 (README) es el más sencillo de cumplir.
+- **3 Issues bien analizadas.**
 
-Una distribución esperada:
+**No necesita:**
 
-- Fase 1 (Repo) → 3 pts
-- Fase 2 (Pages) → 3 pts
-- Fase 3 (Auditoría) → 2 pts (básico)
-- Fase 4 (Issues) → 3 pts (3 issues completas promedio)
-- Fase 5 (Corrección) → 1–2 pts
-- Fase 6 (V/R/S) → 1.5 pts
-- Fase 7 (Conceptos) → 1.5 pts
-- Fase 8 (README) → 1 pt
+- Encontrar todos los problemas existentes en el sitio.
+- Demostrar conocimientos que no fueron enseñados.
 
-**Total esperado: ~16 pts** para un estudiante que sigue las instrucciones.
+**La principal evidencia de aprendizaje será:**
 
-Para diferenciar entre **14 (aprobado)** y **17+ (excelente)** se evalúa:
-- Profundidad de las Issues.
-- Calidad del runbook.
-- Variedad de los problemas detectados.
-- Corrección más elaborada.
-- Organización del repositorio.
+> **Problema → Reproducción → Concepto → Impacto → Severidad → Solución**

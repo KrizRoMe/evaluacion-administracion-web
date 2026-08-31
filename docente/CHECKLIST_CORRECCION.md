@@ -1,6 +1,7 @@
 # Checklist de Corrección — Evaluación Práctica 01
 
-> Para uso del docente. Marca cada ítem y suma puntos al final.
+> **Base de calificación:** contenido de las 3 GitHub Issues.
+> **Escala:** 1–20. Aprobado: 14.
 
 **Estudiante:** _________________________
 **Repositorio:** _________________________
@@ -8,95 +9,55 @@
 
 ---
 
-## 1. Repositorio — /3
+## 📋 ISSUE 1 — /6
 
-| # | Ítem | Sí | No | Puntos |
-|---|------|----|----|--------|
-| 1 | Repositorio público creado | ☐ | ☐ | /1 |
-| 2 | Código del sitio subido completo | ☐ | ☐ | /1 |
-| 3 | Git utilizado correctamente (commits + push) | ☐ | ☐ | /1 |
-|   | **Subtotal** |    |    | **/3** |
-
----
-
-## 2. GitHub Pages — /3
-
-| # | Ítem | Sí | No | Puntos |
-|---|------|----|----|--------|
-| 1 | Pages configurado y activo | ☐ | ☐ | /1 |
-| 2 | URL pública funciona y carga el sitio | ☐ | ☐ | /1 |
-| 3 | URL registrada en el README | ☐ | ☐ | /1 |
-|   | **Subtotal** |    |    | **/3** |
+| # | Criterio | Puntaje |
+|---|----------|--------:|
+| 1 | Identificación del problema | /1 |
+| 2 | Ubicación y reproducción | /1 |
+| 3 | Relación con conceptos del curso | /1.5 |
+| 4 | Impacto | /1 |
+| 5 | Severidad (Baja/Media/Alta + justificación) | /0.5 |
+| 6 | Solución propuesta | /1 |
+|   | **Subtotal Issue 1** | **/6** |
 
 ---
 
-## 3. Auditoría — /3
+## 📋 ISSUE 2 — /6
 
-| # | Ítem | Sí | No | Puntos |
-|---|------|----|----|--------|
-| 1 | Usó Lighthouse y/o Chrome DevTools (Elements, Network) | ☐ | ☐ | /1 |
-| 2 | Problema 1 identificado es válido | ☐ | ☐ | /1 |
-| 3 | Problemas 2 y 3 identificados son válidos | ☐ | ☐ | /1 |
-|   | **Subtotal** |    |    | **/3** |
-
----
-
-## 4. Issues — /4
-
-| # | Ítem | Sí | No | Puntos |
-|---|------|----|----|--------|
-| 1 | Issue 1 completa (problema + evidencia + impacto + solución + mantenimiento + pilar) | ☐ | ☐ | /1.3 |
-| 2 | Issue 2 completa | ☐ | ☐ | /1.3 |
-| 3 | Issue 3 completa | ☐ | ☐ | /1.3 |
-| 4 | Son **exactamente 3** Issues (ni más ni menos) | ☐ | ☐ | /0.1 |
-|   | **Subtotal** |    |    | **/4** |
-
-**Notas sobre clasificación:**
-- Aceptar cualquier clasificación si está justificada.
-- Valorar la explicación por encima de la etiqueta.
+| # | Criterio | Puntaje |
+|---|----------|--------:|
+| 1 | Identificación del problema | /1 |
+| 2 | Ubicación y reproducción | /1 |
+| 3 | Relación con conceptos del curso | /1.5 |
+| 4 | Impacto | /1 |
+| 5 | Severidad (Baja/Media/Alta + justificación) | /0.5 |
+| 6 | Solución propuesta | /1 |
+|   | **Subtotal Issue 2** | **/6** |
 
 ---
 
-## 5. Corrección — /2
+## 📋 ISSUE 3 — /6
 
-| # | Ítem | Sí | No | Puntos |
-|---|------|----|----|--------|
-| 1 | Corrigió al menos 1 problema (commit visible) | ☐ | ☐ | /1 |
-| 2 | Commit + push realizados, Pages sigue funcionando | ☐ | ☐ | /1 |
-|   | **Subtotal** |    |    | **/2** |
-
----
-
-## 6. Administración — /2 (VIVO / RÁPIDO / SEGURO)
-
-| # | Ítem | Sí | No | Puntos |
-|---|------|----|----|--------|
-| 1 | VIVO explicado | ☐ | ☐ | /0.66 |
-| 2 | RÁPIDO explicado con al menos 1 métrica | ☐ | ☐ | /0.67 |
-| 3 | SEGURO con al menos 2 acciones | ☐ | ☐ | /0.67 |
-|   | **Subtotal** |    |    | **/2** |
+| # | Criterio | Puntaje |
+|---|----------|--------:|
+| 1 | Identificación del problema | /1 |
+| 2 | Ubicación y reproducción | /1 |
+| 3 | Relación con conceptos del curso | /1.5 |
+| 4 | Impacto | /1 |
+| 5 | Severidad (Baja/Media/Alta + justificación) | /0.5 |
+| 6 | Solución propuesta | /1 |
+|   | **Subtotal Issue 3** | **/6** |
 
 ---
 
-## 7. Conceptos — /2
+## 🌐 EVALUACIÓN GLOBAL — /2
 
-| # | Ítem | Sí | No | Puntos |
-|---|------|----|----|--------|
-| 1 | Backup 3-2-1 explicado | ☐ | ☐ | /0.4 |
-| 2 | SLI propuesto | ☐ | ☐ | /0.4 |
-| 3 | SLO propuesto | ☐ | ☐ | /0.4 |
-| 4 | SLA explicado | ☐ | ☐ | /0.4 |
-| 5 | Runbook de 4–6 pasos | ☐ | ☐ | /0.4 |
-|   | **Subtotal** |    |    | **/2** |
-
----
-
-## 8. README — /1
-
-| # | Ítem | Sí | No | Puntos |
-|---|------|----|----|--------|
-| 1 | Datos del estudiante, URLs y secciones completas | ☐ | ☐ | /1 |
-|   | **Subtotal** |    |    | **/1** |
+| # | Criterio | Puntaje |
+|---|----------|--------:|
+| 7 | Cobertura de los contenidos de la unidad (variedad de las 3 Issues) | /1 |
+| 8 | Calidad global del análisis (coherencia problema–impacto–solución) | /1 |
+|   | **Subtotal global** | **/2** |
 
 ---
 
@@ -104,14 +65,10 @@
 
 | Sección | Puntos |
 |---------|-------:|
-| 1. Repositorio | /3 |
-| 2. GitHub Pages | /3 |
-| 3. Auditoría | /3 |
-| 4. Issues | /4 |
-| 5. Corrección | /2 |
-| 6. Administración | /2 |
-| 7. Conceptos | /2 |
-| 8. README | /1 |
+| Issue 1 | /6 |
+| Issue 2 | /6 |
+| Issue 3 | /6 |
+| Global | /2 |
 | **TOTAL** | **/20** |
 
 ---
@@ -131,6 +88,43 @@
 
 ---
 
+## 📝 Notas por Issue
+
+### Issue 1
+```
+Problema identificado:
+Concepto relacionado:
+Impacto:
+Severidad:
+Solución:
+```
+
+### Issue 2
+```
+Problema identificado:
+Concepto relacionado:
+Impacto:
+Severidad:
+Solución:
+```
+
+### Issue 3
+```
+Problema identificado:
+Concepto relacionado:
+Impacto:
+Severidad:
+Solución:
+```
+
+### Global
+```
+Cobertura (variedad):
+Calidad global del análisis:
+```
+
+---
+
 ## 📝 Comentarios del docente
 
 ```
@@ -141,4 +135,21 @@ ___________________________________________________________________
 ___________________________________________________________________
 
 ___________________________________________________________________
+
+___________________________________________________________________
 ```
+
+---
+
+## ✅ Verificación de consistencia
+
+Antes de cerrar la nota:
+
+- [ ] Las 3 Issues son **exactamente** 3 (ni más ni menos).
+- [ ] Cada Issue cubre un hallazgo **diferente**.
+- [ ] Cada Issue tiene los 6 criterios evaluados.
+- [ ] La suma de subtotales es correcta.
+- [ ] La nota final está entre 1 y 20.
+- [ ] No se penalizó por redacción u ortografía.
+- [ ] Se aceptó clasificación razonable aunque difiera de la respuesta esperada.
+- [ ] La nota coincide con la rúbrica permisiva (≥14 si el análisis es coherente).
