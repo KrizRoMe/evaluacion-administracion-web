@@ -4,6 +4,19 @@
 
 ---
 
+## 🔗 URLs de la evaluación
+
+| Recurso | URL |
+|---------|-----|
+| 📦 **Repositorio base** | https://github.com/KrizRoMe/evaluacion-administracion-web |
+| 🌐 **Sitio público (auditable)** | https://krizrome.github.io/evaluacion-administracion-web/ |
+| 📝 **Tu repo (estudiante)** | `https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE` |
+| 🚀 **Tu GitHub Pages** | `https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/` |
+
+**Al final de la evaluación entrega al docente:** URL de tu repo + URL de tu GitHub Pages.
+
+---
+
 ## 📌 Slide 1 — Portada
 
 **EVALUACIÓN PRÁCTICA 01**
@@ -14,6 +27,11 @@ Administración y mantenimiento de un sitio web
 - **Duración:** 90 minutos
 - **Escala:** 1 a 20 (aprobado desde 14)
 - **Modalidad:** individual
+
+**URLs visibles en portada:**
+
+- 📦 Repositorio base: https://github.com/KrizRoMe/evaluacion-administracion-web
+- 🌐 Sitio público: https://krizrome.github.io/evaluacion-administracion-web/
 
 ---
 
@@ -27,15 +45,30 @@ Administración y mantenimiento de un sitio web
 - Chrome DevTools (Elements, Network)
 - Lighthouse
 - axe DevTools (accesibilidad)
-- GitHub Issues
+- GitHub Issues (con templates)
 - Conceptos de mantenimiento web
 - Conceptos de administración (VIVO / RÁPIDO / SEGURO)
 
-**No se evalúa:** programación avanzada ni frameworks complejos.
+**No se evalúa:** programación avanzada ni aplicar correcciones en código.
 
 ---
 
-## 📌 Slide 3 — Flujo de la evaluación
+## 📌 Slide 3 — URLs de la evaluación (DEDICADA)
+
+🌐 **Sitio base (código que vas a auditar):**
+https://krizrome.github.io/evaluacion-administracion-web/
+
+📦 **Tu repositorio (donde subirás TU evaluación):**
+https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE
+
+🚀 **Tu sitio publicado (GitHub Pages):**
+https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
+
+📌 **Al final de la evaluación entrega al docente:** URL de tu repo + URL de tu GitHub Pages.
+
+---
+
+## 📌 Slide 4 — Flujo de la evaluación
 
 ```
 Código base
@@ -61,7 +94,7 @@ Entregar
 
 ---
 
-## 📌 Slide 4 — Parte 1: Repositorio (10 min)
+## 📌 Slide 5 — Parte 1: Repositorio (10 min)
 
 **Crear tu repositorio público:**
 
@@ -84,7 +117,7 @@ git push -u origin main
 
 ---
 
-## 📌 Slide 5 — Parte 2: GitHub Pages (10 min)
+## 📌 Slide 6 — Parte 2: GitHub Pages (10 min)
 
 **Activar GitHub Pages:**
 
@@ -100,14 +133,14 @@ git push -u origin main
 - ☐ URL funcionando
 - ☐ URL copiada al README
 
-**URL típica:**
+**Tu URL pública (formato):**
 ```
 https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 ```
 
 ---
 
-## 📌 Slide 6 — Parte 3: Auditoría (15 min)
+## 📌 Slide 7 — Parte 3: Auditoría (15 min)
 
 **Herramientas a usar:**
 
@@ -131,11 +164,11 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 
 ---
 
-## 📌 Slide 7 — Parte 4: GitHub Issues (20 min)
+## 📌 Slide 8 — Parte 4: GitHub Issues (20 min)
 
 **Crear EXACTAMENTE 3 Issues** usando los **templates de Issues** que están en la carpeta `.github/ISSUE_TEMPLATE/` del repositorio.
 
-**Cada Issue tiene 3 templates disponibles según el área del hallazgo:**
+**Cada Issue tiene 4 templates disponibles según el área del hallazgo:**
 
 - `rendimiento.md` — para hallazgos de performance / Lighthouse
 - `mantenimiento.md` — para hallazgos de dependencias / seguridad
@@ -173,7 +206,7 @@ Justificación breve:
 
 ---
 
-## 📌 Slide 8 — Parte 5: Documentar la solución (10 min)
+## 📌 Slide 9 — Parte 5: Documentar la solución (10 min)
 
 **No es necesario aplicar las correcciones en el código.**
 
@@ -191,7 +224,7 @@ En cada Issue, completa la sección **"Solución propuesta"** describiendo en te
 
 ---
 
-## 📌 Slide 9 — Parte 6: README administrativo (15 min)
+## 📌 Slide 10 — Parte 6: README administrativo (15 min)
 
 **Completar el README con:**
 
@@ -206,7 +239,7 @@ En cada Issue, completa la sección **"Solución propuesta"** describiendo en te
 
 ---
 
-## 📌 Slide 10 — Checklist final
+## 📌 Slide 11 — Checklist final + ENTREGA
 
 **Antes de entregar, verifica:**
 
@@ -217,10 +250,16 @@ En cada Issue, completa la sección **"Solución propuesta"** describiendo en te
 - ☐ README completo
 - ☐ URLs en el README
 
-**Para entregar:**
+**📤 ENTREGAR AL DOCENTE:**
 
-- URL del repositorio: `https://github.com/...`
-- URL de GitHub Pages: `https://...github.io/...`
+- 📦 URL de TU repositorio:
+  ```
+  https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE
+  ```
+- 🌐 URL de TU GitHub Pages:
+  ```
+  https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
+  ```
 
 ---
 
