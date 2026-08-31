@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: "📤 Entrega de evaluación (registrar mis URLs)"
-    url: "https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=entrega.yml"
-    about: "Registra la URL de tu repositorio y la URL de tu GitHub Pages para entregar la Evaluación Práctica 01."
+  - name: "🔗 Link de evaluación (publicar mi repo y sitio público)"
+    url: "https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=link-evaluacion.yml"
+    about: "Publica el link de tu repositorio y el link público de tu GitHub Pages de la Evaluación Práctica 01."

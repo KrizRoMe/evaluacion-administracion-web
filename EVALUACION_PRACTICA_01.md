@@ -1,6 +1,6 @@
 # Evaluación Práctica 01 — PPT para Estudiantes
 
-> Este archivo contiene el contenido completo del PPT que se proyecta durante la evaluación. Útil también para imprimir o revisar sin proyector.
+> Este archivo contiene el contenido completo del PPT que se proyecta durante la evaluación.
 
 ---
 
@@ -11,7 +11,7 @@
 | 📦 **Repositorio base** | https://github.com/KrizRoMe/evaluacion-administracion-web |
 | 🌐 **Sitio público (auditable)** | https://krizrome.github.io/evaluacion-administracion-web/ |
 | 📋 **Issues del docente** | https://github.com/KrizRoMe/evaluacion-administracion-web/issues |
-| 📤 **LINK DE ENTREGA (crear Issue con tus URLs)** | https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=entrega.yml |
+| 🔗 **Link de evaluación (crear Issue con tus URLs)** | https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=link-evaluacion.yml |
 | 📝 **Tu repo (estudiante)** | `https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE` |
 | 🚀 **Tu GitHub Pages** | `https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/` |
 
@@ -26,7 +26,6 @@ Administración y mantenimiento de un sitio web
 - **Unidad:** 1
 - **Duración:** 90 minutos
 - **Escala:** 1 a 20 (aprobado desde 14)
-- **Modalidad:** individual
 
 **URLs visibles en portada:**
 
@@ -55,7 +54,7 @@ Administración y mantenimiento de un sitio web
 
 ## 📌 Slide 3 — URLs de la evaluación (DEDICADA)
 
-🌐 **Sitio base (código que vas a auditar):**
+🌐 **Sitio base (el código que vas a auditar):**
 https://krizrome.github.io/evaluacion-administracion-web/
 
 📦 **Tu repositorio (donde subirás TU evaluación):**
@@ -64,31 +63,16 @@ https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE
 🚀 **Tu sitio publicado (GitHub Pages):**
 https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 
-📤 **Dónde entregas tu evaluación (Issue de entrega):**
-https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=entrega.yml
-
-📌 Los 3 hallazgos se documentan como Issues EN TU REPO. La entrega final se hace como Issue AQUÍ.
+🔗 **Link de evaluación (publicar tu repo + sitio público):**
+https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=link-evaluacion.yml
 
 ---
 
 ## 📌 Slide 4 — Flujo de la evaluación
 
 ```
-Código base
-   ↓
-Crear repositorio
-   ↓
-Publicar con GitHub Pages
-   ↓
-Auditar con DevTools / Lighthouse / axe DevTools
-   ↓
-Crear 3 Issues en TU repo
-   ↓
-Documentar solución propuesta en cada Issue
-   ↓
-Completar README
-   ↓
-Crear Issue de ENTREGA en repo del docente
+Código base → Crear repo → GitHub Pages → Auditar+axe →
+3 Issues en TU repo → README → Link de evaluación AQUÍ
 ```
 
 **Tiempo total:** 90 minutos.
@@ -106,16 +90,6 @@ git commit -m "feat: inicio de evaluación"
 gh repo create evaluacion-administracion-web-TU-NOMBRE --public --source=. --remote=origin --push
 ```
 
-**Alternativa con git directo:**
-
-```bash
-git remote add origin https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE.git
-git branch -M main
-git push -u origin main
-```
-
-**Resultado esperado:** código del sitio en tu repositorio público.
-
 ---
 
 ## 📌 Slide 6 — Parte 2: GitHub Pages (10 min)
@@ -125,8 +99,7 @@ git push -u origin main
 1. Settings → Pages
 2. Source: **Deploy from a branch**
 3. Rama: `main`, carpeta: `/ (root)`
-4. Guardar
-5. Esperar 1–2 minutos
+4. Guardar y esperar 1–2 minutos
 
 **Tu URL pública:**
 ```
@@ -143,7 +116,7 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 - **Lighthouse** — Performance → Analyze
 - **axe DevTools** (extensión) — Scan ALL of my page
 
-**Objetivo:** encontrar **3 problemas reales** en el sitio.
+**Objetivo:** encontrar **3 problemas reales**.
 
 ---
 
@@ -162,7 +135,7 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 
 - 📝 Inputs (texto corto con placeholder)
 - 📄 Textareas (texto largo)
-- 🔽 Dropdowns (Pilar, Mantenimiento, etc)
+- 🔽 Dropdowns (Pilar, Mantenimiento, Severidad)
 - ☑️ Checkboxes (Principios WCAG, Conceptos múltiples)
 - ⚠️ Validación required (no se envía si está vacío)
 
@@ -181,11 +154,11 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 
 **README debe incluir:**
 
-VIVO • RÁPIDO (con LCP/INP/CLS/TTFB) • SEGURO (2 acciones) • Backup 3-2-1 • SLI • SLO • SLA • Runbook (4–6 pasos) • Datos del estudiante + URLs
+VIVO · RÁPIDO (con LCP/INP/CLS/TTFB) · SEGURO (2 acciones) · Backup 3-2-1 · SLI · SLO · SLA · Runbook (4–6 pasos) · Datos del estudiante + URLs
 
 ---
 
-## 📌 Slide 10 — Parte 6: Crear Issue de ENTREGA (5 min)
+## 📌 Slide 10 — Parte 6: Publicar link de evaluación (5 min)
 
 **Esta Issue se crea en el repo del DOCENTE.**
 
@@ -193,26 +166,25 @@ VIVO • RÁPIDO (con LCP/INP/CLS/TTFB) • SEGURO (2 acciones) • Backup 3-2-1
 
 1. Abre el repo del curso en una pestaña nueva
 2. Clic en **Issues → New issue**
-3. Selecciona el template **📤 Entrega de evaluación**
-4. Completa el formulario (nombre, código, URLs)
+3. Selecciona el template **🔗 Link de evaluación**
+4. Completa: nombre, código, link de tu repo, link público de tu sitio
 5. Clic en **Submit**
 
 **🔗 LINK DIRECTO:**
 ```
-https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=entrega.yml
+https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=link-evaluacion.yml
 ```
 
-**La Issue de entrega te pide:**
+**La Issue te pide SOLO:**
 
 - Nombre completo
 - Código
-- URL de TU repositorio
-- URL de TU GitHub Pages
-- Checklist de auto-verificación
+- Link de tu repositorio
+- Link público de tu sitio
 
 ---
 
-## 📌 Slide 11 — Checklist final completo
+## 📌 Slide 11 — Checklist final
 
 **📦 En TU repositorio:**
 
@@ -224,29 +196,24 @@ https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=en
 - ☐ README completo
 - ☐ URLs y datos del estudiante
 
-**📤 En repo del DOCENTE (entrega):**
+**🔗 En repo del DOCENTE:**
 
-- ☐ Abrí el link de entrega
-- ☐ Seleccioné el template 'Entrega'
+- ☐ Abrí el link del template
+- ☐ Seleccioné 'Link de evaluación'
 - ☐ Completé nombre, código
-- ☐ Pegué URL de mi repo
-- ☐ Pegué URL de mi GitHub Pages
-- ☐ Marqué el checklist
+- ☐ Pegué link de mi repo
+- ☐ Pegué link público de mi sitio
 - ☐ Envié la Issue
+- ☐ Solo una Issue, no más
 
-🔗 **ENTREGAR AL DOCENTE:** https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=entrega.yml
+🔗 **Publicar link de evaluación:**
+https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=link-evaluacion.yml
 
-📌 Los 3 hallazgos van en TU repo. La ENTREGA final va AQUÍ.
+📌 Los 3 hallazgos van en TU repo. El link de tu evaluación va AQUÍ (solo una Issue).
 
 ---
 
-## 📚 Notas adicionales (no proyectadas)
-
-### Si te quedas atascado
-
-- Lee los mensajes de error completos.
-- `git status` te muestra el estado.
-- `docs.github.com` está en español.
+## 📚 Notas adicionales
 
 ### Tiempos por fase
 
@@ -257,7 +224,7 @@ https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=en
 | Auditoría | 15 min |
 | Issues (TU repo) | 20 min |
 | Documentar soluciones + README | 25 min |
-| Issue de ENTREGA | 5 min |
+| Link de evaluación | 5 min |
 | Verificación | 5 min |
 | **Total** | **90 min** |
 
