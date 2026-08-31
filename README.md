@@ -121,13 +121,15 @@
 
 ---
 
-## Problema corregido
+## Soluciones propuestas
 
-> Indica cuál de las 3 Issues fue solucionada y resume brevemente la corrección.
+> Resume brevemente las soluciones que documentaste en cada Issue (NO es necesario aplicarlas en código).
 
-**Issue corregida:** Issue N°
+**Issue 1 — Solución propuesta:**
 
-**Cambio realizado:**
+**Issue 2 — Solución propuesta:**
+
+**Issue 3 — Solución propuesta:**
 
 ---
 
@@ -136,3 +138,4 @@
 > ¿Qué fue lo más útil que aprendiste con esta evaluación?
 
 **Respuesta:**
+<!-- rebuild trigger: 1788175425 -->

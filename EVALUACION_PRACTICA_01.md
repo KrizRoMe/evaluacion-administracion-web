@@ -26,6 +26,7 @@ Administración y mantenimiento de un sitio web
 - GitHub Pages
 - Chrome DevTools (Elements, Network)
 - Lighthouse
+- axe DevTools (accesibilidad)
 - GitHub Issues
 - Conceptos de mantenimiento web
 - Conceptos de administración (VIVO / RÁPIDO / SEGURO)
@@ -43,11 +44,11 @@ Crear repositorio
    ↓
 Publicar con GitHub Pages
    ↓
-Auditar con DevTools / Lighthouse
+Auditar con DevTools / Lighthouse / axe DevTools
    ↓
 Crear 3 Issues
    ↓
-Corregir al menos 1 problema
+Especificar la solución propuesta en cada Issue
    ↓
 Completar README
    ↓
@@ -55,6 +56,8 @@ Entregar
 ```
 
 **Tiempo total:** 90 minutos.
+
+> ⚠️ **Nota importante:** No es necesario aplicar las correcciones en el código. Basta con **especificar la solución propuesta en el texto de cada GitHub Issue**. La evaluación se basa en la calidad del análisis escrito, no en los commits de corrección.
 
 ---
 
@@ -113,11 +116,15 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
   - Pestaña **Network** → observa los recursos
 - **Lighthouse** (en DevTools)
   - Pestaña **Lighthouse** → Performance → Analyze
+- **axe DevTools** (extensión del navegador)
+  - Pestaña **axe DevTools** → Scan ALL of my page
+  - Detecta problemas de **accesibilidad** (imágenes sin `alt`, contraste, roles ARIA, etc.)
 
 **Objetivo:** encontrar **3 problemas reales**.
 
 **Tipos de problemas que pueden existir:**
 - Rendimiento (imágenes, scripts, métricas)
+- Accesibilidad (imágenes sin `alt`, contraste, semántica)
 - Mantenimiento (dependencias)
 - Seguridad básica (versiones, actualizaciones)
 - Administración (documentación, procedimientos)
@@ -126,60 +133,61 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 
 ## 📌 Slide 7 — Parte 4: GitHub Issues (20 min)
 
-**Crear EXACTAMENTE 3 Issues.**
+**Crear EXACTAMENTE 3 Issues** usando los **templates de Issues** que están en la carpeta `.github/ISSUE_TEMPLATE/` del repositorio.
 
-**Formato sugerido por Issue:**
+**Cada Issue tiene 3 templates disponibles según el área del hallazgo:**
+
+- `rendimiento.md` — para hallazgos de performance / Lighthouse
+- `mantenimiento.md` — para hallazgos de dependencias / seguridad
+- `accesibilidad.md` — para hallazgos de axe DevTools
+- `general.md` — para cualquier otro hallazgo
+
+**Estructura de cada template:**
 
 ```markdown
 ### Problema
 ¿Qué encontraste?
 
+### Ubicación y reproducción
+¿Dónde se encuentra? ¿Cómo reproducirlo o comprobarlo?
+
 ### Evidencia
-¿Dónde lo encontraste? (Lighthouse, Network, código, etc.)
+Capturas, métricas, Lighthouse, DevTools Network, axe DevTools, código, etc.
+
+### Concepto del curso relacionado
+¿Qué concepto de Administración de Sitios Web se relaciona?
+(VIVO/RÁPIDO/SEGURO, mantenimiento, LCP/INP/CLS/TTFB, etc.)
 
 ### Impacto
-¿Por qué podría ser un problema?
+¿Por qué podría ser un problema? ¿A quién afecta?
 
-### Solución propuesta
-¿Qué debería hacerse?
+### Severidad
+- [ ] Baja
+- [ ] Media
+- [ ] Alta
+Justificación breve:
 
-### Tipo de mantenimiento
-- [ ] Preventivo
-- [ ] Correctivo
-- [ ] Adaptativo
-- [ ] Perfectivo
-
-### Pilar
-- [ ] VIVO
-- [ ] RÁPIDO
-- [ ] SEGURO
+### Solución propuesta (NO es necesario aplicarla en código)
+¿Qué debería hacerse? Describe la corrección en texto.
 ```
 
 ---
 
-## 📌 Slide 8 — Parte 5: Corregir al menos 1 problema (15 min)
+## 📌 Slide 8 — Parte 5: Documentar la solución (10 min)
 
-**Ejemplos de corrección:**
+**No es necesario aplicar las correcciones en el código.**
 
-- Agregar `width` y `height` a una imagen.
-- Agregar `defer` al `<script>`.
-- Actualizar una dependencia en `package.json`.
-- Corregir texto en el footer.
-- Agregar una sección al README.
+En cada Issue, completa la sección **"Solución propuesta"** describiendo en texto qué debería hacerse para resolver el problema encontrado.
 
-**Después:**
+**Ejemplos de soluciones en texto (no aplicar):**
 
-```bash
-git add .
-git commit -m "fix: mejora sitio web"
-git push
-```
+- "Agregar atributos `width` y `height` a la etiqueta `<img>` del hero."
+- "Añadir el atributo `defer` al `<script>` para que no sea bloqueante."
+- "Actualizar `jquery` a una versión 3.x sin vulnerabilidades conocidas."
+- "Cambiar el texto del footer por la fecha actual de mantenimiento."
+- "Agregar atributo `alt` descriptivo a todas las imágenes del sitio."
 
-**Checklist:**
-- ☐ Commit realizado
-- ☐ Push realizado
-- ☐ GitHub Pages sigue funcionando
-- ☐ Issue actualizada (cerrada o comentada)
+> 💡 Lo que se evalúa es tu capacidad de **analizar y proponer**, no de **codificar la corrección**.
 
 ---
 
@@ -195,7 +203,6 @@ git push
 - **SLO** — propone un objetivo
 - **SLA** — explica qué es
 - **Runbook** — 4 a 6 pasos para "sitio caído"
-- **Problema corregido** — cuál Issue arreglaste
 
 ---
 
@@ -205,9 +212,8 @@ git push
 
 - ☐ Repositorio público
 - ☐ GitHub Pages funciona
-- ☐ Tengo exactamente **3 Issues**
-- ☐ Corregí **al menos 1 problema**
-- ☐ Hice commit y push
+- ☐ Tengo exactamente **3 Issues** (usando los templates)
+- ☐ Cada Issue tiene todas las secciones completas (Problema, Ubicación, Evidencia, Concepto, Impacto, Severidad, Solución propuesta)
 - ☐ README completo
 - ☐ URLs en el README
 
@@ -242,7 +248,7 @@ git push
 | GitHub Pages | 10 min |
 | Auditoría | 15 min |
 | Issues | 20 min |
-| Corrección | 15 min |
+| Documentar soluciones | 10 min |
 | README | 15 min |
 | Verificación | 5 min |
 | **Total** | **90 min** |

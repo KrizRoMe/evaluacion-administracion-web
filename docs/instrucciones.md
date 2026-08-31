@@ -19,7 +19,7 @@ Que puedes realizar tareas básicas de administración de un sitio web:
 6. Identificar problemas reales en un sitio web.
 7. Documentarlos con GitHub Issues.
 8. Clasificarlos (RÁPIDO / VIVO / SEGURO + tipo de mantenimiento).
-9. Corregir al menos uno.
+9. Proponer soluciones en texto dentro de cada Issue (sin necesidad de aplicarlas en código).
 10. Completar el README con conceptos administrativos.
 
 ---
@@ -57,11 +57,13 @@ Debes auditarlo y encontrar **3 problemas**.
 1. Crear tu repositorio (10 min)
 2. Publicar con GitHub Pages (10 min)
 3. Auditar el sitio (15 min)
-4. Crear 3 GitHub Issues (20 min)
-5. Corregir al menos 1 problema (15 min)
+4. Crear 3 GitHub Issues usando los templates (20 min)
+5. Documentar la solución propuesta en cada Issue (10 min)
 6. Completar el README (15 min)
 7. Verificar todo (5 min)
 ```
+
+> ⚠️ **Nota importante:** No es necesario aplicar las correcciones en el código. Basta con **especificar la solución propuesta en el texto de cada GitHub Issue**. La evaluación se basa en la calidad del análisis escrito, no en los commits de corrección.
 
 ---
 
@@ -126,12 +128,16 @@ Abre la URL pública de tu sitio y utiliza:
 - **Lighthouse**
   - En Chrome DevTools, ve a la pestaña **Lighthouse**.
   - Selecciona **Performance** y haz clic en **Analyze page load**.
+- **axe DevTools** (extensión del navegador)
+  - Si tienes la extensión instalada, ábrela desde DevTools.
+  - Haz clic en **Scan ALL of my page** para detectar problemas de accesibilidad.
 
 **Tu objetivo:** encontrar **3 problemas reales** del sitio.
 
 **Tipos de problemas que pueden existir:**
 - Rendimiento (imágenes, scripts, métricas).
-- Mantenimiento (dependencias, package.json).
+- Accesibilidad (imágenes sin `alt`, contraste, semántica).
+- Mantenimiento (dependencias, `package.json`).
 - Seguridad básica (parches).
 - Administración (documentación, monitoreo, procedimientos).
 
@@ -141,64 +147,68 @@ Abre la URL pública de tu sitio y utiliza:
 
 Crea **EXACTAMENTE 3 Issues** en tu repositorio, una por cada problema detectado.
 
-**Formato sugerido para cada Issue:**
+**Usa los templates** que el docente preparó en `.github/ISSUE_TEMPLATE/`:
 
-**Título (formato libre, ejemplos):**
-- `[PERFORMANCE] Imagen del hero sin width/height`
-- `[MAINTENANCE] Dependencia desactualizada en package.json`
-- `[AVAILABILITY] Falta procedimiento ante sitio caído`
+- `rendimiento.md` → hallazgos de performance / Lighthouse
+- `mantenimiento.md` → hallazgos de dependencias / seguridad
+- `accesibilidad.md` → hallazgos de axe DevTools
+- `general.md` → cualquier otro hallazgo
 
-**Contenido:**
+Para usar un template:
+
+1. Ve a la pestaña **Issues** de tu repositorio.
+2. Clic en **New issue**.
+3. Selecciona el template que corresponda al área del hallazgo.
+4. Completa cada sección del template.
+
+**Contenido de cada Issue (definido en el template):**
 
 ```markdown
 ### Problema
 ¿Qué encontraste?
 
+### Ubicación y reproducción
+¿Dónde se encuentra? ¿Cómo reproducirlo o comprobarlo?
+
 ### Evidencia
-¿Dónde lo encontraste? (Lighthouse, DevTools Network, código, package.json, etc.)
+Capturas, métricas, Lighthouse, DevTools Network, axe DevTools, código, etc.
+
+### Concepto del curso relacionado
+¿Qué concepto de Administración de Sitios Web se relaciona?
+(VIVO/RÁPIDO/SEGURO, mantenimiento, LCP/INP/CLS/TTFB, etc.)
 
 ### Impacto
-¿Por qué podría ser un problema?
+¿Por qué podría ser un problema? ¿A quién afecta?
 
-### Solución propuesta
-¿Qué debería hacerse?
+### Severidad
+- [ ] Baja
+- [ ] Media
+- [ ] Alta
+Justificación breve:
 
-### Tipo de mantenimiento
-- [ ] Preventivo
-- [ ] Correctivo
-- [ ] Adaptativo
-- [ ] Perfectivo
-
-### Pilar
-- [ ] VIVO
-- [ ] RÁPIDO
-- [ ] SEGURO
+### Solución propuesta (NO es necesario aplicarla en código)
+¿Qué debería hacerse? Describe la corrección en texto.
 ```
 
 **Importante:** No importa si clasificas exactamente igual que el docente. Lo que se evalúa es tu capacidad de **explicar** por qué lo clasificaste así.
 
 ---
 
-## 5️⃣ FASE 5 — Corregir al menos 1 problema (15 min)
+## 5️⃣ FASE 5 — Documentar la solución propuesta (10 min)
 
-Corrige **al menos uno** de los 3 problemas.
+**No es necesario aplicar las correcciones en el código.**
 
-**Ejemplos válidos:**
-- Agregar `width` y `height` a una imagen.
-- Agregar `defer` al `<script>`.
-- Actualizar la versión de una dependencia en `package.json`.
-- Corregir un texto mal escrito en el footer.
-- Agregar una sección al README.
+En cada Issue, completa la sección **"Solución propuesta"** describiendo en texto qué debería hacerse para resolver el problema encontrado.
 
-Después:
+**Ejemplos válidos (en texto, NO aplicar):**
 
-```bash
-git add .
-git commit -m "fix: mejora sitio web"
-git push
-```
+- "Agregar atributos `width` y `height` a la etiqueta `<img>` del hero."
+- "Añadir el atributo `defer` al `<script>` para que no sea bloqueante."
+- "Actualizar `jquery` a una versión 3.x sin vulnerabilidades conocidas."
+- "Cambiar el texto del footer por la fecha actual de mantenimiento."
+- "Agregar atributo `alt` descriptivo a todas las imágenes del sitio."
 
-Verifica que GitHub Pages siga funcionando y **actualiza la Issue correspondiente** indicando que se solucionó (comentario o cierre).
+**Lo que se evalúa es tu capacidad de analizar y proponer, no de codificar la corrección.**
 
 ---
 
