@@ -14,15 +14,6 @@ body:
       required: true
 
   - type: input
-    id: codigo
-    attributes:
-      label: Código del estudiante
-      description: "Tu código institucional / matrícula."
-      placeholder: "Ej. 2021456789"
-    validations:
-      required: true
-
-  - type: input
     id: repo
     attributes:
       label: Link de tu repositorio
