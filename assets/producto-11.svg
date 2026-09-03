@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg11" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e1f5fe"/>
+      <stop offset="100%" stop-color="#b3e5fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg11)"/>
+  <ellipse cx="200" cy="320" rx="120" ry="12" fill="#000" opacity="0.1"/>
+  <rect x="100" y="150" width="200" height="170" rx="8" fill="#fff" stroke="#0277bd" stroke-width="2"/>
+  <path d="M115,165 L285,165 L285,180 L115,180 Z" fill="#0277bd"/>
+  <text x="200" y="176" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#fff">DETERGENTE ECO</text>
+  <path d="M130,195 L270,195 L270,310 L130,310 Z" fill="#e1f5fe"/>
+  <circle cx="160" cy="220" r="8" fill="#4fc3f7"/>
+  <circle cx="200" cy="225" r="10" fill="#29b6f6"/>
+  <circle cx="240" cy="220" r="8" fill="#4fc3f7"/>
+  <circle cx="180" cy="245" r="7" fill="#81d4fa"/>
+  <circle cx="220" cy="245" r="7" fill="#81d4fa"/>
+  <circle cx="200" cy="265" r="9" fill="#4fc3f7"/>
+  <path d="M120,165 Q110,160 105,150 L115,148 Q120,158 120,165" fill="#0277bd"/>
+  <path d="M280,165 Q290,160 295,150 L285,148 Q280,158 280,165" fill="#0277bd"/>
+  <text x="200" y="295" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#0277bd">1L</text>
+  <text x="200" y="378" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0277bd">Detergente Natural</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffe0b2"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg6)"/>
+  <ellipse cx="200" cy="310" rx="100" ry="10" fill="#000" opacity="0.1"/>
+  <path d="M130,160 L130,300 L170,310 L170,165 Z" fill="#8d6e63" stroke="#5d4037" stroke-width="2"/>
+  <path d="M170,165 L170,310 L210,310 L210,160 Z" fill="#a1887f" stroke="#5d4037" stroke-width="2"/>
+  <path d="M210,160 L210,310 L250,300 L250,160 Z" fill="#8d6e63" stroke="#5d4037" stroke-width="2"/>
+  <ellipse cx="150" cy="160" rx="20" ry="6" fill="#5d4037"/>
+  <ellipse cx="190" cy="160" rx="20" ry="6" fill="#5d4037"/>
+  <ellipse cx="230" cy="160" rx="20" ry="6" fill="#5d4037"/>
+  <path d="M140,200 L160,200 L160,260 L140,260 Z" fill="#3e2723" opacity="0.3"/>
+  <path d="M180,195 L200,195 L200,255 L180,255 Z" fill="#3e2723" opacity="0.3"/>
+  <path d="M220,205 L240,205 L240,265 L220,265 Z" fill="#3e2723" opacity="0.3"/>
+  <path d="M150,90 L150,160 L160,160 L155,90 Z" fill="#3aa55c"/>
+  <path d="M155,95 Q165,90 170,85 Q175,95 170,100" fill="none" stroke="#3aa55c" stroke-width="2"/>
+  <path d="M200,90 L200,160 L210,160 L205,90 Z" fill="#3aa55c"/>
+  <path d="M205,95 Q215,90 220,85 Q225,95 220,100" fill="none" stroke="#3aa55c" stroke-width="2"/>
+  <text x="200" y="375" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#5d4037">Velas de Cera de Soja</text>
+</svg>

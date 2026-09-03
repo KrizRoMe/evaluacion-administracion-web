@@ -10,7 +10,6 @@
 ## Datos del estudiante
 
 - **Nombre:**
-- **Código:**
 
 ---
 
@@ -41,6 +40,12 @@
 - **URL:**
 
 ### Issue 3
+
+- **Título:**
+- **Problema:**
+- **URL:**
+
+### Issue 4
 
 - **Título:**
 - **Problema:**
@@ -130,6 +135,8 @@
 **Issue 2 — Solución propuesta:**
 
 **Issue 3 — Solución propuesta:**
+
+**Issue 4 — Solución propuesta:**
 
 ---
 

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#efebe9"/>
+      <stop offset="100%" stop-color="#d7ccc8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg8)"/>
+  <ellipse cx="200" cy="320" rx="100" ry="10" fill="#000" opacity="0.1"/>
+  <path d="M150,140 L250,140 L260,160 L260,300 Q260,315 245,315 L155,315 Q140,315 140,300 L140,160 Z" fill="#6d4c41" stroke="#3e2723" stroke-width="2"/>
+  <rect x="150" y="170" width="100" height="130" rx="3" fill="#8d6e63"/>
+  <text x="200" y="220" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">CAFE</text>
+  <text x="200" y="245" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#ffe0b2">100% ARÁBICA</text>
+  <text x="200" y="263" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#ffe0b2">ORGÁNICO</text>
+  <path d="M150,140 L250,140 Q255,135 250,130 L155,130 Q150,135 150,140 Z" fill="#3e2723"/>
+  <rect x="160" y="125" width="80" height="10" rx="2" fill="#5d4037"/>
+  <circle cx="170" cy="195" r="2" fill="#3e2723"/>
+  <circle cx="180" cy="200" r="2" fill="#3e2723"/>
+  <circle cx="190" cy="195" r="2" fill="#3e2723"/>
+  <circle cx="200" cy="200" r="2" fill="#3e2723"/>
+  <circle cx="210" cy="195" r="2" fill="#3e2723"/>
+  <circle cx="220" cy="200" r="2" fill="#3e2723"/>
+  <circle cx="230" cy="195" r="2" fill="#3e2723"/>
+  <path d="M250,150 Q260,150 260,160 L260,170" fill="none" stroke="#3e2723" stroke-width="2"/>
+  <text x="200" y="378" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#3e2723">Café de Altura</text>
+</svg>
