@@ -57,13 +57,14 @@ Debes auditarlo y encontrar **3 problemas**.
 1. Crear tu repositorio (10 min)
 2. Publicar con GitHub Pages (10 min)
 3. Auditar el sitio (15 min)
-4. Crear 3 GitHub Issues usando los templates (20 min)
+4. Crear 4 GitHub Issues usando los templates (20 min)
 5. Documentar la solución propuesta en cada Issue (10 min)
 6. Completar el README (15 min)
 7. Verificar todo (5 min)
 ```
 
-> ⚠️ **Nota importante:** No es necesario aplicar las correcciones en el código. Basta con **especificar la solución propuesta en el texto de cada GitHub Issue**. La evaluación se basa en la calidad del análisis escrito, no en los commits de corrección.
+> ⚠️ **El sitio contiene 15 problemas intencionales.** Tú solo necesitas identificar **4** correctamente analizados.
+> **Puntaje:** 4 Issues × 5 pts = 20 pts. Aprobado desde 14.
 
 ---
 
@@ -143,9 +144,11 @@ Abre la URL pública de tu sitio y utiliza:
 
 ---
 
-## 4️⃣ FASE 4 — Crear 3 GitHub Issues (20 min)
+## 4️⃣ FASE 4 — Crear 4 GitHub Issues (20 min)
 
-Crea **EXACTAMENTE 3 Issues** en tu repositorio, una por cada problema detectado.
+Crea **EXACTAMENTE 4 Issues** en tu repositorio, una por cada problema detectado.
+
+> ⚠️ El sitio tiene **15 problemas intencionales**. Tú solo necesitas identificar **4** bien analizados. No es necesario encontrarlos todos.
 
 **Usa los templates** que el docente preparó en `.github/ISSUE_TEMPLATE/`:
 

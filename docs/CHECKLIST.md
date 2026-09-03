@@ -31,7 +31,7 @@ Usa esta lista para verificar tu avance.
 
 ## Issues — 20 min
 
-- [ ] Creé **EXACTAMENTE 3 Issues** usando los templates de `.github/ISSUE_TEMPLATE/`.
+- [ ] Creé **EXACTAMENTE 4 Issues** usando los templates de `.github/ISSUE_TEMPLATE/`.
 - [ ] Cada Issue tiene:
   - [ ] Problema
   - [ ] Ubicación y reproducción
@@ -49,10 +49,10 @@ Usa esta lista para verificar tu avance.
 
 ## README — 15 min
 
-- [ ] Completé mis datos (Nombre, Código).
+- [ ] Completé mi nombre.
 - [ ] Pegué la URL del repositorio.
 - [ ] Pegué la URL de GitHub Pages.
-- [ ] Listé las 3 Issues con sus URLs.
+- [ ] Listé las 4 Issues con sus URLs.
 - [ ] Respondí VIVO.
 - [ ] Respondí RÁPIDO.
 - [ ] Respondí SEGURO (2 acciones).
@@ -67,7 +67,7 @@ Usa esta lista para verificar tu avance.
 
 - [ ] El repo es público.
 - [ ] Pages funciona.
-- [ ] Tengo exactamente 3 Issues.
+- [ ] Tengo exactamente 4 Issues.
 - [ ] Cada Issue usa un template.
 - [ ] Cada Issue tiene todas las secciones completas.
 - [ ] El README está completo.
