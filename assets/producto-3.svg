@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8e1"/>
+      <stop offset="100%" stop-color="#ffecb3"/>
+    </linearGradient>
+    <linearGradient id="bambu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a1887f"/>
+      <stop offset="100%" stop-color="#5d4037"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg3)"/>
+  <rect x="190" y="80" width="20" height="240" rx="4" fill="url(#bambu)"/>
+  <path d="M205,80 L205,320" stroke="#3e2723" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="200" cy="100" rx="12" ry="3" fill="#3e2723"/>
+  <ellipse cx="200" cy="150" rx="12" ry="3" fill="#3e2723"/>
+  <ellipse cx="200" cy="200" rx="12" ry="3" fill="#3e2723"/>
+  <ellipse cx="200" cy="250" rx="12" ry="3" fill="#3e2723"/>
+  <ellipse cx="200" cy="300" rx="12" ry="3" fill="#3e2723"/>
+  <path d="M200,320 L150,360 Q145,365 150,370 L160,365 Q180,355 200,340 Q220,355 240,365 L250,370 Q255,365 250,360 Z" fill="#8d6e63"/>
+  <path d="M180,330 Q175,340 170,345" stroke="#fff" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M220,330 Q225,340 230,345" stroke="#fff" stroke-width="3" fill="none" opacity="0.7"/>
+  <circle cx="195" cy="345" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="205" cy="345" r="2" fill="#fff" opacity="0.6"/>
+  <text x="200" y="390" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#5d4037">Cepillo de Bambú</text>
+</svg>
