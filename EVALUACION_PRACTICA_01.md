@@ -2,8 +2,8 @@
 
 > Este archivo contiene el contenido completo del PPT que se proyecta durante la evaluación.
 > 
-> **IMPORTANTE:** Esta versión tiene **15 problemas intencionales** en el sitio base. El estudiante solo necesita identificar **4** problemas correctamente analizados.
-> **Puntaje:** 4 Issues × 5 pts = **20 pts**. Aprobado desde 14.
+> **IMPORTANTE:** Esta versión tiene **15 problemas intencionales** en el sitio base. El estudiante solo necesita identificar **3** (uno de cada tipo).
+> **Puntaje:** 4 Issues en el repo del docente × 5 pts = **20 pts**. Aprobado desde 14.
 
 ---
 
@@ -13,8 +13,8 @@
 |---------|-----|
 | 📦 **Repositorio base** | https://github.com/KrizRoMe/evaluacion-administracion-web |
 | 🌐 **Sitio público (auditable)** | https://krizrome.github.io/evaluacion-administracion-web/ |
-| 📋 **Issues del docente** | https://github.com/KrizRoMe/evaluacion-administracion-web/issues |
-| 🔗 **Link de evaluación** | https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=link-evaluacion.yml |
+| 📋 **Issues del docente (aquí van las 4 Issues del estudiante)** | https://github.com/KrizRoMe/evaluacion-administracion-web/issues |
+| 🔗 **Link de evaluación (4ª Issue)** | https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=link-evaluacion.yml |
 | 📝 **Tu repo (estudiante)** | `https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE` |
 | 🚀 **Tu GitHub Pages** | `https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/` |
 
@@ -29,6 +29,7 @@ Administración y mantenimiento de un sitio web
 - **Unidad:** 1
 - **Duración:** 90 minutos
 - **Escala:** 1 a 20 (aprobado desde 14)
+- **Puntaje:** 4 Issues × 5 pts = 20 pts
 
 **URLs visibles en portada:**
 - 📦 Repositorio base: https://github.com/KrizRoMe/evaluacion-administracion-web
@@ -58,14 +59,16 @@ Administración y mantenimiento de un sitio web
 🌐 **Sitio base (el código que vas a auditar):**
 https://krizrome.github.io/evaluacion-administracion-web/
 
-📦 **Tu repositorio (donde subirás TU evaluación):**
+📦 **Tu repositorio (donde subirás TU sitio desplegado):**
 https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE
 
 🚀 **Tu sitio publicado (GitHub Pages):**
 https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 
-🔗 **Link de evaluación (publicar tu repo + sitio público):**
-https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=link-evaluacion.yml
+📋 **Repo del DOCENTE (donde crearás las 4 Issues):**
+https://github.com/KrizRoMe/evaluacion-administracion-web/issues
+
+⚠️ **Las 4 Issues se crean en el repo del DOCENTE, NO en tu repo personal.**
 
 ---
 
@@ -73,13 +76,13 @@ https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=li
 
 ```
 Código base → Crear repo → GitHub Pages → Auditar+axe →
-4 Issues en TU repo → README → Link de evaluación AQUÍ
+3 Issues hallazgos (repo docente) → Documentar solución → Issue link-evaluación (repo docente) → Entrega
 ```
 
 **Tiempo total:** 90 minutos.
 **Puntaje:** 4 Issues × 5 pts = 20 pts
 
-> ⚠️ El sitio tiene **15 problemas intencionales**. Tú solo necesitas identificar **4**.
+> ⚠️ El sitio tiene **15 problemas intencionales**. Tú solo necesitas encontrar **3** (uno de cada tipo).
 
 ---
 
@@ -114,37 +117,46 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 - **Lighthouse** — Performance → Analyze
 - **axe DevTools** — Scan ALL of my page
 
-**El sitio tiene 15 problemas:**
-- 5 de rendimiento
-- 5 de accesibilidad
-- 3 de mantenimiento/seguridad
-- 2 de administración
+**Tipos de problemas a buscar (uno de cada):**
 
-**Objetivo:** encontrar **4 problemas reales**. Variedad es positiva pero no obligatoria.
+📊 **RENDIMIENTO** (Chrome DevTools + Lighthouse):
+- Imágenes sin `width/height`, sin `loading="lazy"`, `<script>` sin `defer`, SVGs pesados, recursos bloqueantes.
 
----
+♿ **ACCESIBILIDAD** (axe DevTools):
+- Imágenes sin `alt`, botones sin `aria-label`, contraste insuficiente, inputs sin `<label>`, falta de landmarks ARIA.
 
-## 📌 Slide 8 — Parte 4: Crear 4 Issues en TU repo (20 min)
+🔧 **MANTENIMIENTO** (package.json + código):
+- jQuery 2.1.4 (versión antigua), meta tags de seguridad faltantes, comentarios `TODO/FIXME`, footer desactualizado, falta de runbook público.
 
-⚠️ Estas 4 Issues se crean en **TU PROPIO repositorio**, NO en el del docente.
-
-**Templates interactivos** en `.github/ISSUE_TEMPLATE/`:
-- 📊 `rendimiento.yml` → performance / Lighthouse
-- 🔧 `mantenimiento.yml` → dependencias / seguridad
-- ♿ `accesibilidad.yml` → axe DevTools
-- 📝 `general.yml` → cualquier otro hallazgo
-
-**Cada Issue se evalúa con 4 criterios (5 pts):**
-- ✓ Identificación correcta del problema (2 pts)
-- ✓ Ubicación y evidencia (1 pt)
-- ✓ Impacto + concepto del curso relacionado (1 pt)
-- ✓ Solución propuesta en texto (1 pt)
-
-**Cada template es un FORMULARIO INTERACTIVO** con inputs, dropdowns y checkboxes.
+**Objetivo:** encontrar **3 problemas reales**. Variedad es positiva pero no obligatoria.
 
 ---
 
-## 📌 Slide 9 — Parte 5: Documentar solución + README (25 min)
+## 📌 Slide 8 — Parte 4: Crear 3 Issues de hallazgos (25 min, en el REPO DEL DOCENTE)
+
+⚠️ **Estas 3 Issues NO se crean en tu repo personal. Se crean en el repo del docente.**
+
+**Pasos:**
+1. Abre `https://github.com/KrizRoMe/evaluacion-administracion-web/issues` en una pestaña nueva.
+2. Clic en New issue.
+3. Selecciona UNO de los 3 templates: rendimiento.yml, accesibilidad.yml, o mantenimiento.yml.
+4. Completa todas las secciones del template.
+5. Submit. Repite 2 veces más (1 issue por cada tipo).
+
+**Formato de cada Issue (ciclo de mejora):**
+- Problema (qué encontraste)
+- Evidencia — MEDIR (herramienta, métrica, captura)
+- Impacto (a quién afecta)
+- Solución propuesta — PROPONER + MEJORAR (en texto, no aplicar en código)
+- Pilar (VIVO / RÁPIDO / SEGURO)
+- Concepto del curso
+- Severidad + Justificación
+
+**Puntaje:** 3 Issues × 5 pts = 15 pts (no se exige aplicar correcciones en código).
+
+---
+
+## 📌 Slide 9 — Parte 5: Documentar solución (10 min)
 
 **No es necesario aplicar las correcciones en el código.** Solo ANALIZAR y PROPONER en texto.
 
@@ -154,19 +166,17 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 - "Actualizar `jquery` a una versión 3.x."
 - "Agregar atributo `alt` descriptivo a las imágenes."
 
-**README debe incluir:**
-VIVO · RÁPIDO (con LCP/INP/CLS/TTFB) · SEGURO (2 acciones) · Backup 3-2-1 · SLI · SLO · SLA · Runbook (4–6 pasos) · Datos del estudiante + URLs
-
 ---
 
-## 📌 Slide 10 — Parte 6: Publicar link de evaluación (5 min)
+## 📌 Slide 10 — Parte 6: Issue de link-evaluación (5 min)
+
+Esta es la **4ª y última Issue**. Se crea también en el repo del docente, pero con el template `link-evaluacion.yml`.
 
 **Pasos:**
-1. Abre el repo del curso en una pestaña nueva
-2. Clic en **Issues → New issue**
-3. Selecciona el template **🔗 Link de evaluación**
-4. Completa: nombre, link de tu repo, link público de tu sitio
-5. Clic en **Submit**
+1. En el repo del docente: Issues → New issue
+2. Selecciona el template **🔗 Link de evaluación**
+3. Completa: nombre, link de tu repo, link público de tu sitio
+4. Clic en Submit
 
 **🔗 LINK DIRECTO:**
 ```
@@ -185,25 +195,24 @@ https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=li
 **📦 En TU repositorio:**
 - ☐ Repo público
 - ☐ GitHub Pages funciona
-- ☐ EXACTAMENTE 4 Issues creadas
-- ☐ Cada Issue usa un template .yml
-- ☐ Cada Issue completa todas las secciones
 - ☐ README completo
 - ☐ URLs y datos del estudiante
 
-**🔗 En repo del DOCENTE:**
-- ☐ Abrí el link del template
-- ☐ Seleccioné 'Link de evaluación'
-- ☐ Puse mi nombre
-- ☐ Pegué link de mi repo
-- ☐ Pegué link público de mi sitio
-- ☐ Envié la Issue
-- ☐ Solo una Issue, no más
+**📋 3 ISSUES EN REPO DEL DOCENTE:**
+- ☐ Issue 1 con template `rendimiento.yml`
+- ☐ Issue 2 con template `accesibilidad.yml`
+- ☐ Issue 3 con template `mantenimiento.yml`
+- ☐ Cada Issue completa todas las secciones
 
-🔗 **Publicar link de evaluación:**
-https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=link-evaluacion.yml
+**🔗 4ª ISSUE EN REPO DEL DOCENTE:**
+- ☐ Abrí el link del template `link-evaluacion.yml`
+- ☐ Completé: nombre, link de mi repo, link público de mi sitio
+- ☐ Envié la Issue (solo una, no más)
 
-📌 Las 4 Issues van en TU repo. El link va AQUÍ (solo una Issue).
+**📊 PUNTAJE TOTAL: 20 puntos**
+- 3 Issues de hallazgos × 5 pts = 15 pts
+- 1 Issue de link-evaluación × 5 pts = 5 pts
+- **Aprobado: ≥14 pts**
 
 ---
 
@@ -216,20 +225,18 @@ https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=li
 | Repositorio | 10 min |
 | GitHub Pages | 10 min |
 | Auditoría | 15 min |
-| 4 Issues (TU repo) | 20 min |
-| Documentar soluciones + README | 25 min |
-| Link de evaluación | 5 min |
+| 3 Issues hallazgos (repo docente) | 25 min |
+| Documentar soluciones + README | 10 min |
+| Issue link-evaluación | 5 min |
 | Verificación | 5 min |
 | **Total** | **90 min** |
 
-### Cambios respecto a la versión anterior
+### Resumen de cambios vs versión anterior
 
 | Antes | Ahora |
 |-------|-------|
-| 3 Issues × 6 pts + 2 pts global | **4 Issues × 5 pts** (sin global) |
-| 6 problemas en el sitio | **15 problemas en el sitio** |
-| Identificar 3 | **Identificar 4** |
-| Dificultad mixta | **Dificultad 4/10 uniforme** |
-| Repo público con respuestas | **Repo privado separado** |
+| Issues en el repo del estudiante | **Issues en el repo del DOCENTE** |
+| 4 Issues independientes | **4 Issues: 3 hallazgos + 1 link-evaluación** |
+| Plantillas genéricas | **Plantillas por tipo de problema** |
 
 ¡Éxito! 🌿

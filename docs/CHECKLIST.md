@@ -25,34 +25,46 @@ Usa esta lista para verificar tu avance.
 - [ ] Revisé la pestaña **Elements**.
 - [ ] Revisé la pestaña **Network**.
 - [ ] Ejecuté **Lighthouse** (Performance).
-- [ ] (Opcional) Escaneé con **axe DevTools** para accesibilidad.
-- [ ] Encontré **3 problemas reales**.
+- [ ] Escaneé con **axe DevTools** para accesibilidad.
+- [ ] Encontré **3 problemas reales** (uno de cada tipo).
 - [ ] Anoté dónde encontré cada problema.
 
-## Issues — 20 min
+## 3 Issues de hallazgos — 25 min (en el REPO DEL DOCENTE)
 
-- [ ] Creé **EXACTAMENTE 4 Issues** usando los templates de `.github/ISSUE_TEMPLATE/`.
+- [ ] Abrí el repo del docente: `KrizRoMe/evaluacion-administracion-web/issues`
+- [ ] Creé **3 Issues** (una por cada tipo):
+  - [ ] **Issue 1** con template `rendimiento.yml`
+  - [ ] **Issue 2** con template `accesibilidad.yml`
+  - [ ] **Issue 3** con template `mantenimiento.yml`
 - [ ] Cada Issue tiene:
   - [ ] Problema
-  - [ ] Ubicación y reproducción
-  - [ ] Evidencia
-  - [ ] Concepto del curso relacionado
+  - [ ] Evidencia (MEDIR)
   - [ ] Impacto
-  - [ ] Severidad (Baja/Media/Alta) + justificación
-  - [ ] Solución propuesta (en texto, NO aplicada)
-- [ ] Cada Issue cubre un área diferente (idealmente).
+  - [ ] Solución propuesta (en texto)
+  - [ ] Pilar (VIVO/RÁPIDO/SEGURO)
+  - [ ] Concepto del curso
+  - [ ] Severidad + Justificación
 
 ## Soluciones propuestas — 10 min
 
 - [ ] Cada Issue tiene una solución propuesta **descrita en texto**.
 - [ ] NO es necesario aplicar las correcciones en el código.
 
+## 4ª Issue — link-evaluación (5 min, en el REPO DEL DOCENTE)
+
+- [ ] Abrí el link del template `link-evaluacion.yml`
+- [ ] Completé:
+  - [ ] Mi nombre
+  - [ ] Link de mi repo
+  - [ ] Link público de mi sitio
+- [ ] Envié la Issue (solo una, no más)
+
 ## README — 15 min
 
 - [ ] Completé mi nombre.
 - [ ] Pegué la URL del repositorio.
 - [ ] Pegué la URL de GitHub Pages.
-- [ ] Listé las 4 Issues con sus URLs.
+- [ ] Listé las 4 Issues con sus URLs (3 hallazgos + 1 link-evaluación).
 - [ ] Respondí VIVO.
 - [ ] Respondí RÁPIDO.
 - [ ] Respondí SEGURO (2 acciones).
@@ -67,16 +79,33 @@ Usa esta lista para verificar tu avance.
 
 - [ ] El repo es público.
 - [ ] Pages funciona.
-- [ ] Tengo exactamente 4 Issues.
-- [ ] Cada Issue usa un template.
+- [ ] Tengo **EXACTAMENTE 3 Issues de hallazgos** en el repo del docente.
+- [ ] Tengo **1 Issue de link-evaluación** en el repo del docente.
 - [ ] Cada Issue tiene todas las secciones completas.
 - [ ] El README está completo.
 - [ ] Las URLs están en el README.
 
 ---
 
-## 🎯 Listo para entregar
+## 🎯 Puntaje
 
-- **URL del repositorio:**
-- **URL de GitHub Pages:**
-- **Fecha y hora de entrega:**
+| Item | Puntaje |
+|------|--------:|
+| 3 Issues de hallazgos × 5 pts | /15 |
+| 1 Issue de link-evaluación × 5 pts | /5 |
+| **TOTAL** | **/20** |
+
+**Aprobado: ≥14 pts**
+
+---
+
+## 📤 Para entregar
+
+Nada. El docente revisa directamente:
+- Tu repo (URL pública)
+- Tu GitHub Pages
+- Las 3 Issues + 1 Issue de link-evaluación en su repo
+
+---
+
+¡Éxito! 🌿
