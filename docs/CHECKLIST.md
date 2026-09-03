@@ -4,13 +4,15 @@ Usa esta lista para verificar tu avance.
 
 ---
 
-## Repositorio — 10 min
+## Clonar, verificar y subir — 10 min
 
-- [ ] Creé mi repositorio público.
-- [ ] El nombre es `evaluacion-administracion-web-TU-NOMBRE`.
-- [ ] Subí los archivos del sitio.
-- [ ] Hice commit inicial.
-- [ ] Hice push a `main`.
+- [ ] Cloné el repositorio del docente con `git clone`
+- [ ] Entré a la carpeta del proyecto
+- [ ] Abrí `index.html` en el navegador y vi la tienda ECOMARKET funcionando
+- [ ] Creé mi repositorio público en https://github.com/new (sin inicializar)
+- [ ] El nombre es `evaluacion-administracion-web-TU-NOMBRE`
+- [ ] Conecté el remoto: `git remote add origin https://...`
+- [ ] Hice push a `main`
 
 ## GitHub Pages — 10 min
 
