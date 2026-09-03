@@ -92,31 +92,31 @@ Código base → Crear repo → GitHub Pages → Auditar+axe →
 
 ### 1️⃣ Clonar el repositorio del docente
 ```bash
-$ git clone https://github.com/KrizRoMe/evaluacion-administracion-web.git
-$ cd evaluacion-administracion-web
+$ git clone https://github.com/KrizRoMe/evaluacion-administracion-web.git && cd evaluacion-administracion-web
 ```
 
 ### 2️⃣ Verificar que el sitio funciona localmente
-- Doble clic en `index.html` (o arrastrar al navegador)
-- Debe verse la tienda ECOMARKET con productos, carrito y modo oscuro
-- Si funciona → todo OK ✓
+- Doble clic en `index.html` → debe verse la tienda ECOMARKET con productos, carrito y modo oscuro
 
 ### 3️⃣ Crear tu repositorio personal (manual, en la web)
 1. Abre https://github.com/new en tu navegador
-2. Repository name: `evaluacion-administracion-web-TU-NOMBRE`
-3. Visibility: **Public**
-4. NO inicialices con README, .gitignore ni license (déjalo vacío)
+2. **Repository name:** `evaluacion-administracion-web-TU-NOMBRE`
+3. **Visibility:** Public
+4. **NO** inicialices con README, .gitignore ni license (déjalo vacío)
 5. Clic en **Create repository** → Copia la URL HTTPS
 
-### 4️⃣ Conectar y subir con git puro
+### 4️⃣ Configurar git, conectar y subir
 ```bash
+# Identidad de git (solo la primera vez en tu PC)
+$ git config --global user.name "Tu Nombre Completo"
+$ git config --global user.email "tu@correo.com"
+
+# Conectar y subir a tu repo (no add: set-url porque ya existe por git clone)
 $ git remote set-url origin https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE.git
-$ git branch -M main
-$ git push -u origin main
+$ git branch -M main   &&   $ git push -u origin main
 ```
 
-> ⚠️ Usamos `git remote set-url` (no `add`) porque ya hiciste `git clone` y el remoto `origin` ya existe — solo lo **redirigimos** a tu repo personal.
-> Si clonar fallara y necesitas crear el remoto desde cero: `git remote add origin URL`.
+> 💡 Si ya configuraste git antes, no necesitas repetir los `git config`.
 
 > 💡 No se exige memorizar comandos. Si logras subir el código, está bien.
 
@@ -137,21 +137,22 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 
 ## 📌 Slide 7 — Parte 3: Auditar el sitio (15 min)
 
-**Herramientas a usar:**
-- **Chrome DevTools** (F12) — Elements + Network
-- **Lighthouse** — Performance → Analyze
-- **axe DevTools** — Scan ALL of my page
+**Herramientas a usar (con comandos de pista):**
 
-**Tipos de problemas a buscar (uno de cada):**
+📊 **RENDIMIENTO** (Chrome DevTools + Lighthouse)
+- Herramientas: Chrome DevTools + Lighthouse
+- Ejemplos: imagen sin width/height, sin loading="lazy", <script> sin defer, SVGs pesados, recursos bloqueantes
+- 💡 Pista: `F12 → Lighthouse → Analyze`
 
-📊 **RENDIMIENTO** (Chrome DevTools + Lighthouse):
-- Imágenes sin `width/height`, sin `loading="lazy"`, `<script>` sin `defer`, SVGs pesados, recursos bloqueantes.
+♿ **ACCESIBILIDAD** (axe DevTools)
+- Herramientas: axe DevTools
+- Ejemplos: imágenes sin alt, botones sin aria-label, contraste, inputs sin label, landmarks
+- 💡 Pista: `F12 → axe DevTools → Scan`
 
-♿ **ACCESIBILIDAD** (axe DevTools):
-- Imágenes sin `alt`, botones sin `aria-label`, contraste insuficiente, inputs sin `<label>`, falta de landmarks ARIA.
-
-🔧 **MANTENIMIENTO** (package.json + código):
-- jQuery 2.1.4 (versión antigua), meta tags de seguridad faltantes, comentarios `TODO/FIXME`, footer desactualizado, falta de runbook público.
+🔧 **MANTENIMIENTO** (package.json + código)
+- Herramientas: package.json + código
+- Ejemplos: jQuery 2.1.4, meta tags de seguridad, TODO/FIXME, footer, runbook
+- 💡 Pista: `cat package.json | grep -r TODO | curl -I URL`
 
 **Objetivo:** encontrar **3 problemas reales**. Variedad es positiva pero no obligatoria.
 
