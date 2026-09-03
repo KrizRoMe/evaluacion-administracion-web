@@ -152,7 +152,7 @@ https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
 🔧 **MANTENIMIENTO** (package.json + código)
 - Herramientas: package.json + código
 - Ejemplos: jQuery 2.1.4, meta tags de seguridad, TODO/FIXME, footer, runbook
-- 💡 Pista: `cat package.json | grep -r TODO | curl -I URL`
+- 💡 Pista: `npm audit | npm outdated | grep -r 'TODO\|FIXME' .`
 
 **Objetivo:** encontrar **3 problemas reales**. Variedad es positiva pero no obligatoria.
 
