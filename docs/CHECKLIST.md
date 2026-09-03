@@ -11,7 +11,7 @@ Usa esta lista para verificar tu avance.
 - [ ] Abrí `index.html` en el navegador y vi la tienda ECOMARKET funcionando
 - [ ] Creé mi repositorio público en https://github.com/new (sin inicializar)
 - [ ] El nombre es `evaluacion-administracion-web-TU-NOMBRE`
-- [ ] Conecté el remoto: `git remote add origin https://...`
+- [ ] Conecté el remoto: `git remote set-url origin https://...`
 - [ ] Hice push a `main`
 
 ## GitHub Pages — 10 min

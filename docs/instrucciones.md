@@ -95,10 +95,13 @@ cd evaluacion-administracion-web
 ### 1️⃣4️⃣ Conectar y subir con git puro
 
 ```bash
-git remote add origin https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE.git
+git remote set-url origin https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE.git
 git branch -M main
 git push -u origin main
 ```
+
+> ⚠️ Usamos `git remote set-url` (no `add`) porque ya hiciste `git clone` y el remoto `origin` ya existe — solo lo **redirigimos** a tu repo personal.
+> Si clonar fallara y necesitas crear el remoto desde cero: `git remote add origin URL`.
 
 **Importante:** No se exige memorizar comandos. Si logras subir el código correctamente, está bien.
 
