@@ -1,38 +1,42 @@
 name: Hallazgo de accesibilidad
-description: Reportar un problema de accesibilidad detectado con axe DevTools
-title: "[A11Y] "
+description: "Reportar un problema de accesibilidad detectado con axe DevTools."
+title: "A11Y: "
 labels: ["accessibility", "evaluacion-01"]
 assignees: []
 body:
   - type: input
     id: problema
     attributes:
-      label: Problema encontrado
-      description: Describe brevemente el hallazgo de accesibilidad.
-      placeholder: Ej. La imagen principal del hero no tiene atributo alt.
+      label: Problema
+      description: "¿Qué encontraste? (sé específico y breve)"
+      placeholder: "Imagen principal del hero no tiene atributo alt."
     validations:
       required: true
 
   - type: input
-    id: ubicacion
+    id: evidencia
     attributes:
-      label: Ubicación y reproducción
-      description: ¿En qué archivo/elemento/URL se encuentra?
-      placeholder: |
-        Elemento: <img src="assets/hero.svg">
-        Línea: index.html, sección hero
+      label: Evidencia (MEDIR)
+      description: "Regla de axe DevTools violada, WCAG relacionada, elemento afectado."
+      placeholder: "axe DevTools → regla image-alt. WCAG 1.1.1. <img src=assets/hero.svg> sin alt."
     validations:
       required: true
 
-  - type: textarea
-    id: evidencia
+  - type: input
+    id: impacto
     attributes:
-      label: Evidencia
-      description: Regla de axe DevTools violada, WCAG relacionada, elemento afectado.
-      placeholder: |
-        Regla axe: image-alt
-        WCAG: 1.1.1 Non-text Content
-        Elemento: <img src="assets/hero.svg"> (sin atributo alt)
+      label: Impacto
+      description: "¿A quién afecta? (usuarios con discapacidad, SEO, etc.)"
+      placeholder: "Usuarios con lectores decreen no pueden saber qué muestra la imagen del hero."
+    validations:
+      required: true
+
+  - type: input
+    id: solucion
+    attributes:
+      label: Solución propuesta (PROPONER + MEJORAR)
+      description: "Describe en texto qué debería hacerse."
+      placeholder: "Agregar alt='Productos ecológicos en una mesa de madera' a la imagen del hero. Auditar todas las imágenes del sitio."
     validations:
       required: true
 
@@ -41,8 +45,8 @@ body:
     attributes:
       label: Pilar de administración
       options:
-        - VIVO (disponibilidad)
-        - RÁPIDO (rendimiento)
+        - "VIVO (disponibilidad)"
+        - "RÁPIDO (rendimiento)"
         - SEGURO
     validations:
       required: true
@@ -52,16 +56,16 @@ body:
     attributes:
       label: Principios WCAG afectados
       options:
-        - label: Perceptible (imágenes, color, contraste)
-        - label: Operable (teclado, navegación, foco)
-        - label: Comprensible (lenguaje, consistencia)
-        - label: Robusto (compatibilidad con tecnologías de asistencia)
+        - label: "Perceptible (imágenes, color, contraste)"
+        - label: "Operable (teclado, navegación, foco)"
+        - label: "Comprensible (lenguaje, consistencia)"
+        - label: "Robusto (compatibilidad con tecnologías de asistencia)"
 
   - type: input
     id: concepto
     attributes:
-      label: Concepto del curso relacionado
-      placeholder: Ej. Atributo alt en imágenes, contraste WCAG AA, roles ARIA, semántica HTML.
+      label: Concepto del curso
+      placeholder: "Atributo alt en imágenes, contraste WCAG AA, roles ARIA, semántica HTML."
     validations:
       required: true
 
@@ -74,15 +78,6 @@ body:
         - Correctivo
         - Adaptativo
         - Perfectivo
-    validations:
-      required: true
-
-  - type: textarea
-    id: impacto
-    attributes:
-      label: Impacto
-      description: ¿A quién afecta? (usuarios con discapacidad, SEO, etc.)
-      placeholder: Ej. Usuarios con lectores de pantalla no pueden saber qué muestra la imagen del hero.
     validations:
       required: true
 
@@ -105,12 +100,13 @@ body:
       required: true
 
   - type: textarea
-    id: solucion
+    id: ciclo_mejora
     attributes:
-      label: Solución propuesta (NO es necesario aplicarla en código)
-      description: Describe en texto qué debería hacerse.
-      placeholder: |
-        - Agregar alt="Productos ecológicos en una mesa de madera" a la imagen del hero.
-        - Verificar todas las imágenes tengan alt descriptivo.
-    validations:
-      required: true
+      label: Ciclo de mejora (opcional)
+      description: "MEDIR → IDENTIFICAR → PROPONER → MEJORAR → VOLVER A MEDIR."
+      value: |
+        1. MEDIR: ¿Qué métrica/herramienta confirma el problema?
+        2. IDENTIFICAR: ¿Cuál es la causa raíz?
+        3. PROPONER: ¿Qué solución recomiendas?
+        4. MEJORAR: ¿Cómo se implementa?
+        5. VOLVER A MEDIR: ¿Cómo verificas que mejoró?

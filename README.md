@@ -25,30 +25,28 @@
 
 ---
 
-## Issues
+## Issues del estudiante (en el repo del docente)
 
-### Issue 1
-
-- **Título:**
-- **Problema:**
-- **URL:**
-
-### Issue 2
+### Issue 1 — Rendimiento
 
 - **Título:**
 - **Problema:**
 - **URL:**
 
-### Issue 3
+### Issue 2 — Accesibilidad
 
 - **Título:**
 - **Problema:**
 - **URL:**
 
-### Issue 4
+### Issue 3 — Mantenimiento
 
 - **Título:**
 - **Problema:**
+- **URL:**
+
+### Issue 4 — Link de evaluación
+
 - **URL:**
 
 ---
@@ -145,4 +143,3 @@
 > ¿Qué fue lo más útil que aprendiste con esta evaluación?
 
 **Respuesta:**
-<!-- rebuild trigger: 1788175425 -->

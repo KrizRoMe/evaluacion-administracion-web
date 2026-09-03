@@ -1,38 +1,42 @@
 name: Hallazgo de mantenimiento
-description: Reportar un problema relacionado con dependencias, npm, package.json o mantenimiento
-title: "[MAINTENANCE] "
+description: "Reportar un problema relacionado con dependencias, npm, package.json, mantenimiento o seguridad."
+title: "MAINTENANCE: "
 labels: ["maintenance", "evaluacion-01"]
 assignees: []
 body:
   - type: input
     id: problema
     attributes:
-      label: Problema encontrado
-      description: Describe brevemente el hallazgo de mantenimiento que identificaste.
-      placeholder: Ej. El package.json incluye dependencias con versiones muy antiguas.
+      label: Problema
+      description: "¿Qué encontraste? (sé específico y breve)"
+      placeholder: "Dependencia jquery en versión 2.1.4 (2014) con vulnerabilidades conocidas."
     validations:
       required: true
 
   - type: input
-    id: ubicacion
+    id: evidencia
     attributes:
-      label: Ubicación y reproducción
-      description: ¿En qué archivo o sección se encuentra? ¿Cómo comprobarlo?
-      placeholder: |
-        Pasos:
-        1. Abrir el archivo package.json.
-        2. Revisar la sección dependencies.
+      label: Evidencia (MEDIR)
+      description: "package.json, npm audit, código, headers HTTP, etc."
+      placeholder: "package.json línea 18: jquery 2.1.4. npm audit → 3 vulnerabilidades críticas."
     validations:
       required: true
 
-  - type: textarea
-    id: evidencia
+  - type: input
+    id: impacto
     attributes:
-      label: Evidencia
-      description: package.json, npm audit, código, etc. Pega el fragmento relevante.
-      placeholder: |
-        Sección: dependencies
-        Detalle: jquery 2.1.4 (versión de 2014 con vulnerabilidades conocidas)
+      label: Impacto
+      description: "¿A quién afecta? ¿Qué consecuencia tiene?"
+      placeholder: "Sitio expuesto a vulnerabilidades conocidas que ya tienen parche disponible."
+    validations:
+      required: true
+
+  - type: input
+    id: solucion
+    attributes:
+      label: Solución propuesta (PROPONER + MEJORAR)
+      description: "Describe en texto qué debería hacerse."
+      placeholder: "Actualizar jquery a 3.7.x. Eliminar dependencias no usadas (left-pad). Documentar política de actualización."
     validations:
       required: true
 
@@ -40,10 +44,9 @@ body:
     id: pilar
     attributes:
       label: Pilar de administración
-      description: Selecciona el pilar con el que se relaciona este hallazgo.
       options:
-        - VIVO (disponibilidad)
-        - RÁPIDO (rendimiento)
+        - "VIVO (disponibilidad)"
+        - "RÁPIDO (rendimiento)"
         - SEGURO
     validations:
       required: true
@@ -51,19 +54,19 @@ body:
   - type: checkboxes
     id: conceptos
     attributes:
-      label: Conceptos del curso relacionados
-      description: Marca todos los conceptos que apliquen.
+      label: Conceptos del curso
+      description: "Marca los que apliquen."
       options:
-        - label: Mantenimiento preventivo
-        - label: Mantenimiento correctivo
-        - label: Mantenimiento adaptativo
-        - label: Mantenimiento perfectivo
-        - label: Dependencias / npm / package.json
-        - label: Versionado semántico
-        - label: Parches de seguridad
-        - label: Backups
-        - label: Monitoreo / runbooks
-        - label: Otro (especificar abajo)
+        - label: "Mantenimiento preventivo"
+        - label: "Mantenimiento correctivo"
+        - label: "Mantenimiento adaptativo"
+        - label: "Mantenimiento perfectivo"
+        - label: "Dependencias / npm / package.json"
+        - label: "Versionado semántico"
+        - label: "Parches de seguridad"
+        - label: "Backups / 3-2-1"
+        - label: "Monitoreo / runbooks"
+        - label: "Otro (especificar en solución)"
 
   - type: dropdown
     id: mantenimiento_tipo
@@ -74,15 +77,6 @@ body:
         - Correctivo
         - Adaptativo
         - Perfectivo
-    validations:
-      required: true
-
-  - type: textarea
-    id: impacto
-    attributes:
-      label: Impacto
-      description: ¿A quién afecta? ¿Qué consecuencia tiene?
-      placeholder: Ej. El sitio queda expuesto a vulnerabilidades conocidas que ya tienen parche.
     validations:
       required: true
 
@@ -105,13 +99,13 @@ body:
       required: true
 
   - type: textarea
-    id: solucion
+    id: ciclo_mejora
     attributes:
-      label: Solución propuesta (NO es necesario aplicarla en código)
-      description: Describe en texto qué debería hacerse.
-      placeholder: |
-        - Actualizar jquery a la versión 3.7.x.
-        - Eliminar dependencias no usadas (left-pad).
-        - Documentar la política de actualización.
-    validations:
-      required: true
+      label: Ciclo de mejora (opcional)
+      description: "MEDIR → IDENTIFICAR → PROPONER → MEJORAR → VOLVER A MEDIR."
+      value: |
+        1. MEDIR: ¿Qué métrica/herramienta confirma el problema?
+        2. IDENTIFICAR: ¿Cuál es la causa raíz?
+        3. PROPONER: ¿Qué solución recomiendas?
+        4. MEJORAR: ¿Cómo se implementa?
+        5. VOLVER A MEDIR: ¿Cómo verificas que mejoró?

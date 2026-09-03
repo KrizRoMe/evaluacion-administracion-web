@@ -3,7 +3,7 @@
 **Curso:** Administración de Sitios Web
 **Duración total:** 90 minutos
 **Modalidad:** individual
-**Escala:** 1–20 (aprobado desde 14)
+**Puntaje:** 4 Issues en el repo del docente × 5 pts = **20 pts**. Aprobado desde 14.
 
 ---
 
@@ -16,11 +16,31 @@ Que puedes realizar tareas básicas de administración de un sitio web:
 3. Publicar una página mediante GitHub Pages.
 4. Inspeccionar una página web con Chrome DevTools.
 5. Utilizar Lighthouse.
-6. Identificar problemas reales en un sitio web.
-7. Documentarlos con GitHub Issues.
-8. Clasificarlos (RÁPIDO / VIVO / SEGURO + tipo de mantenimiento).
-9. Proponer soluciones en texto dentro de cada Issue (sin necesidad de aplicarlas en código).
-10. Completar el README con conceptos administrativos.
+6. Utilizar axe DevTools.
+7. Identificar **3 problemas reales** del sitio (uno de cada tipo).
+8. Documentarlos con **3 Issues de hallazgos** en el repo del docente.
+9. Clasificarlos (VIVO / RÁPIDO / SEGURO + tipo de mantenimiento).
+10. Proponer soluciones en texto dentro de cada Issue (sin necesidad de aplicarlas en código).
+11. Completar el README con conceptos administrativos.
+12. Crear **1 Issue adicional** con el template `link-evaluacion.yml` para registrar tu link.
+
+---
+
+## 🧭 Flujo de la evaluación
+
+```
+1. Crear tu repositorio (10 min)
+2. Publicar con GitHub Pages (10 min)
+3. Auditar el sitio (15 min)
+4. Crear 3 Issues de hallazgos en el REPO DEL DOCENTE (25 min)
+5. Documentar la solución propuesta en cada Issue (10 min)
+6. Crear la 4ª Issue con el template link-evaluacion (5 min)
+7. Verificar todo (5 min)
+```
+
+> ⚠️ **Importante:** Las **4 Issues se crean en el repo del DOCENTE** (`KrizRoMe/evaluacion-administracion-web/issues`), NO en tu repo personal.
+
+> ⚠️ El sitio contiene **15 problemas intencionales**. Tú solo necesitas identificar **3** (uno de cada tipo).
 
 ---
 
@@ -37,44 +57,24 @@ Que puedes realizar tareas básicas de administración de un sitio web:
 
 ## 🌐 Sitio entregado
 
-Recibirás un sitio web llamado **EcoMarket** con varios problemas intencionales.
-
-El sitio contiene:
-- Una tienda ecológica ficticia.
+El sitio se llama **EcoMarket** y tiene varios problemas intencionales.
 - HTML, CSS y JavaScript vanilla.
-- Una dependencia declarada en `package.json`.
-- Imágenes placeholder.
+- Múltiples secciones (hero, productos, ofertas, testimonios, blog, etc.).
+- Funcionalidades JS reales (carrito, modo oscuro, búsqueda, etc.).
 
-Debes auditarlo y encontrar **3 problemas**.
-
-**No es necesario encontrarlos todos**, solo 3 válidos.
-
----
-
-## 🧭 Flujo de la evaluación
-
-```
-1. Crear tu repositorio (10 min)
-2. Publicar con GitHub Pages (10 min)
-3. Auditar el sitio (15 min)
-4. Crear 4 GitHub Issues usando los templates (20 min)
-5. Documentar la solución propuesta en cada Issue (10 min)
-6. Completar el README (15 min)
-7. Verificar todo (5 min)
-```
-
-> ⚠️ **El sitio contiene 15 problemas intencionales.** Tú solo necesitas identificar **4** correctamente analizados.
-> **Puntaje:** 4 Issues × 5 pts = 20 pts. Aprobado desde 14.
+Debes auditarlo y encontrar **3 problemas reales**, uno de cada tipo:
+- **Rendimiento** (Chrome DevTools + Lighthouse)
+- **Accesibilidad** (axe DevTools)
+- **Mantenimiento** (package.json + código)
 
 ---
 
 ## 1️⃣ FASE 1 — Crear tu repositorio (10 min)
 
-1. Crea un repositorio público en GitHub con el nombre:
-
-```
-evaluacion-administracion-web-TU-NOMBRE
-```
+1. Crea un repositorio **público** en GitHub con el nombre:
+   ```
+   evaluacion-administracion-web-TU-NOMBRE
+   ```
 
 2. Sube los archivos del sitio base (los recibirás del docente).
 
@@ -109,11 +109,9 @@ git push -u origin main
 4. Guarda.
 5. Espera 1–2 minutos.
 6. GitHub te dará una URL pública del tipo:
-
-```
-https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
-```
-
+   ```
+   https://TU-USUARIO.github.io/evaluacion-administracion-web-TU-NOMBRE/
+   ```
 7. Verifica que el sitio cargue correctamente.
 8. Copia esa URL al README.md.
 
@@ -133,36 +131,39 @@ Abre la URL pública de tu sitio y utiliza:
   - Si tienes la extensión instalada, ábrela desde DevTools.
   - Haz clic en **Scan ALL of my page** para detectar problemas de accesibilidad.
 
-**Tu objetivo:** encontrar **3 problemas reales** del sitio.
+**Tu objetivo:** encontrar **3 problemas reales** del sitio (uno de cada tipo).
 
 **Tipos de problemas que pueden existir:**
-- Rendimiento (imágenes, scripts, métricas).
-- Accesibilidad (imágenes sin `alt`, contraste, semántica).
-- Mantenimiento (dependencias, `package.json`).
-- Seguridad básica (parches).
-- Administración (documentación, monitoreo, procedimientos).
+
+- **Rendimiento:** imágenes sin `width/height`, sin `loading="lazy"`, `<script>` sin `defer`, SVGs pesados, recursos bloqueantes.
+- **Accesibilidad:** imágenes sin `alt`, botones sin `aria-label`, contraste insuficiente, inputs sin `<label>`, falta de landmarks ARIA.
+- **Mantenimiento:** jQuery 2.1.4 (versión antigua), meta tags de seguridad faltantes, comentarios `TODO/FIXME`, footer desactualizado, falta de runbook público.
 
 ---
 
-## 4️⃣ FASE 4 — Crear 4 GitHub Issues (20 min)
+## 4️⃣ FASE 4 — Crear 3 Issues de hallazgos en el REPO DEL DOCENTE (25 min)
 
-Crea **EXACTAMENTE 4 Issues** en tu repositorio, una por cada problema detectado.
+> ⚠️ **Estas 3 Issues NO se crean en tu repo personal. Se crean en el repo del docente.**
 
-> ⚠️ El sitio tiene **15 problemas intencionales**. Tú solo necesitas identificar **4** bien analizados. No es necesario encontrarlos todos.
+Crea **EXACTAMENTE 3 Issues** (una por cada tipo de problema detectado):
 
-**Usa los templates** que el docente preparó en `.github/ISSUE_TEMPLATE/`:
+**Usa los templates** que el docente preparó en `.github/ISSUE_TEMPLATE/` del repo del docente:
 
-- `rendimiento.md` → hallazgos de performance / Lighthouse
-- `mantenimiento.md` → hallazgos de dependencias / seguridad
-- `accesibilidad.md` → hallazgos de axe DevTools
-- `general.md` → cualquier otro hallazgo
+- `rendimiento.yml` → hallazgos de performance / Lighthouse
+- `accesibilidad.yml` → hallazgos de axe DevTools
+- `mantenimiento.yml` → hallazgos de dependencias / seguridad
 
-Para usar un template:
+Para usar los templates:
 
-1. Ve a la pestaña **Issues** de tu repositorio.
+1. Ve a la pestaña **Issues** del repo del docente:
+   ```
+   https://github.com/KrizRoMe/evaluacion-administracion-web/issues
+   ```
 2. Clic en **New issue**.
 3. Selecciona el template que corresponda al área del hallazgo.
 4. Completa cada sección del template.
+5. Clic en **Submit (Crear)**.
+6. Repite el proceso 2 veces más (1 issue por cada tipo).
 
 **Contenido de cada Issue (definido en el template):**
 
@@ -170,18 +171,22 @@ Para usar un template:
 ### Problema
 ¿Qué encontraste?
 
-### Ubicación y reproducción
-¿Dónde se encuentra? ¿Cómo reproducirlo o comprobarlo?
-
-### Evidencia
-Capturas, métricas, Lighthouse, DevTools Network, axe DevTools, código, etc.
-
-### Concepto del curso relacionado
-¿Qué concepto de Administración de Sitios Web se relaciona?
-(VIVO/RÁPIDO/SEGURO, mantenimiento, LCP/INP/CLS/TTFB, etc.)
+### Evidencia (MEDIR)
+Herramienta usada, métrica o captura que demuestra el problema.
 
 ### Impacto
-¿Por qué podría ser un problema? ¿A quién afecta?
+¿A quién afecta? ¿Qué consecuencia tiene?
+
+### Solución propuesta (PROPONER + MEJORAR)
+Describe en texto qué debería hacerse. NO es necesario aplicarla en código.
+
+### Pilar de administración
+- [ ] VIVO (disponibilidad)
+- [ ] RÁPIDO (rendimiento)
+- [ ] SEGURO
+
+### Concepto del curso relacionado
+Concepto específico de Administración de Sitios Web.
 
 ### Severidad
 - [ ] Baja
@@ -189,8 +194,12 @@ Capturas, métricas, Lighthouse, DevTools Network, axe DevTools, código, etc.
 - [ ] Alta
 Justificación breve:
 
-### Solución propuesta (NO es necesario aplicarla en código)
-¿Qué debería hacerse? Describe la corrección en texto.
+### Ciclo de mejora (opcional)
+1. MEDIR: ¿Qué métrica/herramienta confirma el problema?
+2. IDENTIFICAR: ¿Cuál es la causa raíz?
+3. PROPONER: ¿Qué solución recomiendas?
+4. MEJORAR: ¿Cómo se implementa?
+5. VOLVER A MEDIR: ¿Cómo verificas que mejoró?
 ```
 
 **Importante:** No importa si clasificas exactamente igual que el docente. Lo que se evalúa es tu capacidad de **explicar** por qué lo clasificaste así.
@@ -215,21 +224,24 @@ En cada Issue, completa la sección **"Solución propuesta"** describiendo en te
 
 ---
 
-## 6️⃣ FASE 6 — Completar el README (15 min)
+## 6️⃣ FASE 6 — Issue de link-evaluación (5 min)
 
-Completa el archivo `README.md` respondiendo cada sección:
+Esta es la **4ª y última Issue**. Se crea también en el repo del docente, pero con el template `link-evaluacion.yml`.
 
-- VIVO
-- RÁPIDO
-- SEGURO
-- Backup 3-2-1
-- SLI
-- SLO
-- SLA
-- Runbook — Sitio caído
-- Problema corregido
+**Pasos:**
 
-**No necesitas respuestas perfectas.** Explica con tus palabras.
+1. En el repo del docente: Issues → New issue
+2. Selecciona el template **🔗 Link de evaluación**
+3. Completa:
+   - Nombre completo
+   - Link de tu repositorio
+   - Link público de tu sitio
+4. Clic en **Submit**
+
+**Link directo:**
+```
+https://github.com/KrizRoMe/evaluacion-administracion-web/issues/new?template=link-evaluacion.yml
+```
 
 ---
 
@@ -238,23 +250,23 @@ Completa el archivo `README.md` respondiendo cada sección:
 Antes de entregar, verifica:
 
 - [ ] El repositorio es público.
-- [ ] GitHub Pages está activo y la URL funciona.
-- [ ] Creaste **exactamente 3 Issues**.
-- [ ] Corregiste **al menos 1 problema**.
-- [ ] Hiciste commit y push de los cambios.
+- [ ] Pages funciona.
+- [ ] Tengo **EXACTAMENTE 3 Issues de hallazgos** en el repo del docente (uno de cada tipo).
+- [ ] Tengo **1 Issue de link-evaluación** en el repo del docente.
+- [ ] Cada Issue de hallazgo tiene todas las secciones completas.
 - [ ] El README está completo.
-- [ ] Las URLs de Issues y Pages están en el README.
+- [ ] Las URLs están en el README.
 
 ---
 
 ## 📤 Entrega
 
-Para entregar:
+Para entregar, **NO envíes nada al docente**. El docente revisará directamente:
 
-1. Asegúrate de que todos tus commits estén en `main` (push).
-2. Envía al docente:
-   - La **URL de tu repositorio**.
-   - La **URL pública de GitHub Pages**.
+1. Tu repositorio (URL pública).
+2. Tu GitHub Pages (URL pública).
+3. Las **3 Issues de hallazgos** en `https://github.com/KrizRoMe/evaluacion-administracion-web/issues`.
+4. La **Issue de link-evaluación** en el mismo repo.
 
 ---
 
@@ -268,14 +280,15 @@ Para entregar:
 - No necesitas modificar el diseño visual.
 - No necesitas programar funcionalidades nuevas.
 - El repositorio debe ser público.
+- Las Issues se crean en el **repo del docente**, no en tu repo.
 
 ---
 
 ## 🆘 Si te quedas atascado
 
 - Lee los mensajes de error completos.
-- Ejecuta `git status` para ver el estado de tu repo.
-- Consulta `docs.github.com` (en español).
+- `git status` te muestra el estado.
+- `docs.github.com` está en español.
 - Pide ayuda al docente solo si es un problema técnico de Git/GitHub CLI, no conceptual.
 
 ¡Éxito! 🌿

@@ -1,39 +1,42 @@
 name: Hallazgo de rendimiento
-description: Reportar un problema relacionado con performance, Lighthouse o métricas web
-title: "[PERFORMANCE] "
+description: "Reportar un problema relacionado con performance, Lighthouse o métricas web."
+title: "PERFORMANCE: "
 labels: ["performance", "evaluacion-01"]
 assignees: []
 body:
   - type: input
     id: problema
     attributes:
-      label: Problema encontrado
-      description: Describe brevemente el hallazgo de rendimiento que identificaste.
-      placeholder: Ej. La imagen del hero tarda en cargar y supera los 4 MB.
+      label: Problema
+      description: "¿Qué encontraste? (sé específico y breve)"
+      placeholder: "Imagen de 4 MB en el hero."
     validations:
       required: true
 
   - type: input
-    id: ubicacion
+    id: evidencia
     attributes:
-      label: Ubicación y reproducción
-      description: ¿En qué archivo/elemento/URL se encuentra? Proporciona pasos suficientes para reproducirlo.
-      placeholder: |
-        Pasos:
-        1. Abrir el sitio en modo incógnito.
-        2. Inspeccionar la pestaña Network.
-        3. Filtrar por Img.
+      label: Evidencia (MEDIR)
+      description: "Herramienta usada, métrica o fragmento que demuestra el problema."
+      placeholder: "Lighthouse Performance score = 45. LCP = 6.2s. Network → hero.jpg = 4 MB."
     validations:
       required: true
 
-  - type: textarea
-    id: evidencia
+  - type: input
+    id: impacto
     attributes:
-      label: Evidencia
-      description: Capturas, métricas de Lighthouse (LCP, INP, CLS, TTFB), DevTools Network, etc.
-      placeholder: |
-        Herramienta usada: Lighthouse
-        Métrica o resultado: LCP = 6.2s (debería ser < 2.5s)
+      label: Impacto
+      description: "¿A quién afecta? ¿Qué consecuencia tiene?"
+      placeholder: "Mayor cantidad de datos transferidos, LCP alto, usuarios en conexiones lentas abandonan."
+    validations:
+      required: true
+
+  - type: input
+    id: solucion
+    attributes:
+      label: Solución propuesta (PROPONER + MEJORAR)
+      description: "Describe en texto qué qué debería hacerse. NO es necesario aplicarla en código."
+      placeholder: "Optimizar la imagen: comprimir a WebP, ancho máximo 1200px, agregar width/height explícitos."
     validations:
       required: true
 
@@ -41,10 +44,10 @@ body:
     id: pilar
     attributes:
       label: Pilar de administración
-      description: Selecciona el pilar con el que se relaciona este hallazgo.
+      description: "VIVO (disponibilidad) · RÁPIDO (rendimiento) · SEGURO"
       options:
-        - VIVO (disponibilidad)
-        - RÁPIDO (rendimiento)
+        - "VIVO (disponibilidad)"
+        - "RÁPIDO (rendimiento)"
         - SEGURO
     validations:
       required: true
@@ -52,9 +55,9 @@ body:
   - type: input
     id: concepto
     attributes:
-      label: Concepto del curso relacionado
-      description: Menciona el concepto específico (LCP, INP, CLS, TTFB, caching, optimización de imágenes, defer/async, etc.).
-      placeholder: Ej. LCP (Largest Contentful Paint)
+      label: Concepto del curso
+      description: "Concepto específico del curso relacionado (LCP, INP, CLS, TTFB, caching, defer, lazy loading, etc.)."
+      placeholder: "LCP (Largest Contentful Paint)"
     validations:
       required: true
 
@@ -62,21 +65,11 @@ body:
     id: mantenimiento
     attributes:
       label: Tipo de mantenimiento
-      description: Selecciona el tipo de mantenimiento asociado.
       options:
         - Preventivo
         - Correctivo
         - Adaptativo
         - Perfectivo
-    validations:
-      required: true
-
-  - type: textarea
-    id: impacto
-    attributes:
-      label: Impacto
-      description: ¿A quién afecta? ¿Qué consecuencia tiene para el usuario o el sitio?
-      placeholder: Ej. Los usuarios en conexiones lentas abandonan la página antes de que cargue el contenido principal.
     validations:
       required: true
 
@@ -95,19 +88,18 @@ body:
     id: justificacion
     attributes:
       label: Justificación de la severidad
-      description: Explica brevemente por qué asignaste esa severidad.
-      placeholder: Ej. Es Alta porque afecta al 100% de los usuarios en la primera interacción.
+      description: "Por qué asignaste esa severidad."
     validations:
       required: true
 
   - type: textarea
-    id: solucion
+    id: ciclo_mejora
     attributes:
-      label: Solución propuesta (NO es necesario aplicarla en código)
-      description: Describe en texto qué debería hacerse para resolver el problema.
-      placeholder: |
-        - Comprimir la imagen a WebP.
-        - Limitar el ancho a 1200px.
-        - Agregar width y height explícitos.
-    validations:
-      required: true
+      label: Ciclo de mejora (opcional)
+      description: "Pasos sugeridos: MEDIR → IDENTIFICAR → PROPONER → MEJORAR → VOLVER A MEDIR."
+      value: |
+        1. MEDIR: ¿Qué métrica/herramienta confirma el problema?
+        2. IDENTIFICAR: ¿Cuál es la causa raíz?
+        3. PROPONER: ¿Qué solución recomiendas?
+        4. MEJORAR: ¿Cómo se implementa?
+        5. VOLVER A MEDIR: ¿Cómo verificas que mejoró?

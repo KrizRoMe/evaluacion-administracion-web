@@ -1,43 +1,49 @@
 name: Hallazgo general
-description: "Reportar cualquier otro hallazgo (administración, monitoreo, documentación, etc.)"
-title: "[GENERAL] "
+description: "Reportar cualquier otro hallazgo (administración, monitoreo, documentación, etc.)."
+title: "GENERAL: "
 labels: ["general", "evaluacion-01"]
 assignees: []
 body:
   - type: input
     id: problema
     attributes:
-      label: Problema encontrado
-      description: "Describe brevemente el hallazgo."
-      placeholder: "Ej. El footer no indica fecha de mantenimiento ni procedimiento ante caída."
+      label: Problema
+      description: "¿Qué encontraste? (sé específico y breve)"
+      placeholder: "El footer no indica fecha de mantenimiento ni procedimiento ante caída."
     validations:
       required: true
 
   - type: input
-    id: ubicacion
+    id: evidencia
     attributes:
-      label: "Ubicación y reproducción"
-      description: "¿En qué archivo/elemento se encuentra? ¿Cómo comprobarlo?"
-      placeholder: |
-        Pasos:
-        1. Abrir el sitio público.
-        2. Scroll hasta el footer.
-        3. Leer el texto del copyright.
+      label: Evidencia (MEDIR)
+      description: "Donde quiera que esté: código, configuración, documentación, captura, etc."
+      placeholder: "<footer> en index.html → 'Última actualización: hace mucho tiempo'. No hay runbook público."
     validations:
       required: true
 
-  - type: textarea
-    id: evidencia
+  - type: input
+    id: impacto
     attributes:
-      label: Evidencia
-      description: "Donde quiera que esté: código, configuración, documentación, captura, etc."
+      label: Impacto
+      description: "¿A quién afecta? ¿Qué consecuencia tiene para el sitio o los usuarios?"
+      placeholder: "Usuarios no saben cuándo se actualizó el sitio. En caso de caída, no hay procedimiento documentado."
+    validations:
+      required: true
+
+  - type: input
+    id: solucion
+    attributes:
+      label: Solución propuesta (PROPONER + MEJORAR)
+      description: "Describe en texto qué debería hacerse."
+      placeholder: "Cambiar el footer a fecha actual. Publicar un runbook de 4-6 pasos para 'sitio caído' en README.md."
     validations:
       required: true
 
   - type: dropdown
     id: pilar
     attributes:
-      label: "Pilar de administración"
+      label: Pilar de administración
       options:
         - "VIVO (disponibilidad)"
         - "RÁPIDO (rendimiento)"
@@ -48,8 +54,8 @@ body:
   - type: checkboxes
     id: conceptos
     attributes:
-      label: "Conceptos del curso relacionados"
-      description: "Marca todos los que apliquen."
+      label: Conceptos del curso
+      description: "Marca los que apliquen."
       options:
         - label: "Monitoreo (activo/pasivo)"
         - label: "Uptime / disponibilidad"
@@ -58,24 +64,17 @@ body:
         - label: "Runbook para incidentes"
         - label: "Documentación del sitio"
         - label: "Procedimiento ante caída"
-        - label: "Otro (especificar abajo)"
+        - label: "Otro (especificar en solución)"
 
   - type: dropdown
     id: mantenimiento
     attributes:
-      label: "Tipo de mantenimiento"
+      label: Tipo de mantenimiento
       options:
         - Preventivo
         - Correctivo
         - Adaptativo
         - Perfectivo
-    validations:
-      required: true
-
-  - type: textarea
-    id: impacto
-    attributes:
-      label: Impacto
     validations:
       required: true
 
@@ -93,13 +92,18 @@ body:
   - type: input
     id: justificacion
     attributes:
-      label: "Justificación de la severidad"
+      label: Justificación de la severidad
     validations:
       required: true
 
   - type: textarea
-    id: solucion
+    id: ciclo_mejora
     attributes:
-      label: "Solución propuesta (NO es necesario aplicarla en código)"
-    validations:
-      required: true
+      label: Ciclo de mejora (opcional)
+      description: "MEDIR → IDENTIFICAR → PROPONER → MEJORAR → VOLVER A MEDIR."
+      value: |
+        1. MEDIR: ¿Qué métrica/herramienta confirma el problema?
+        2. IDENTIFICAR: ¿Cuál es la causa raíz?
+        3. PROPONER: ¿Qué solución recomiendas?
+        4. MEJORAR: ¿Cómo se implementa?
+        5. VOLVER A MEDIR: ¿Cómo verificas que mejoró?
