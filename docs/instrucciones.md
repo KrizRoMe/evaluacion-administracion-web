@@ -69,27 +69,30 @@ Debes auditarlo y encontrar **3 problemas reales**, uno de cada tipo:
 
 ---
 
-## 1️⃣ FASE 1 — Crear tu repositorio (10 min)
+## 1️⃣ FASE 1 — Clonar, verificar y subir (10 min)
 
-1. Crea un repositorio **público** en GitHub con el nombre:
-   ```
-   evaluacion-administracion-web-TU-NOMBRE
-   ```
-
-2. Sube los archivos del sitio base (los recibirás del docente).
-
-3. Puedes usar `git` directamente o `gh repo create`.
-
-**Comandos orientativos (puedes usar otra secuencia válida):**
+### 1️⃣1️⃣ Clonar el repositorio del docente
 
 ```bash
-git init
-git add .
-git commit -m "feat: inicio de evaluación"
-gh repo create evaluacion-administracion-web-TU-NOMBRE --public --source=. --remote=origin --push
+git clone https://github.com/KrizRoMe/evaluacion-administracion-web.git
+cd evaluacion-administracion-web
 ```
 
-Si `gh` falla, también puedes hacer:
+### 1️⃣2️⃣ Verificar que el sitio funciona localmente
+
+- Doble clic en `index.html` (o arrastrar al navegador).
+- Debe verse la tienda ECOMARKET con productos, carrito y modo oscuro.
+- Si funciona → todo OK ✓.
+
+### 1️⃣3️⃣ Crear tu repositorio personal (manual, en la web)
+
+1. Abre https://github.com/new en tu navegador.
+2. **Repository name:** `evaluacion-administracion-web-TU-NOMBRE`
+3. **Visibility:** Public
+4. **NO** inicialices con README, .gitignore ni license (déjalo vacío).
+5. Clic en **Create repository** → Copia la URL HTTPS que te muestra.
+
+### 1️⃣4️⃣ Conectar y subir con git puro
 
 ```bash
 git remote add origin https://github.com/TU-USUARIO/evaluacion-administracion-web-TU-NOMBRE.git
